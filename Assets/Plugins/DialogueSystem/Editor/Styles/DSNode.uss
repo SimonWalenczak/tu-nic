@@ -1,0 +1,125 @@
+/*CONTAINERS*/
+
+.node__extension-container{
+	background-color: #111;
+	padding: 8px;
+}
+
+.node__main-container{
+	background-color: #111;
+}
+
+/*INPUTS */
+
+.node__textfield > .unity-text-field__input{
+	background-color: #111;
+	border-color: #333;
+	border-radius: 4px;
+	max-width: 240px;
+	min-width: 60px;
+	padding: 8px;
+}
+
+.node__textfield__hidden > .unity-text-field__input{
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.node__textfield__hidden > .unity-text-field__input:focus{
+	background-color: #111;
+	border-color: #333;
+}
+
+.node__name-textfield > .unity-text-field__input{
+	max-width: 350px;
+	margin: 0px;
+	padding: 4px;
+}
+
+.node__name-textfield > .unity-text-field__input:focus{
+}
+
+.node__character-textfield > .unity-text-field__input{
+	padding: 4px;
+	background-color: #222;
+	border-color: transparent;
+	max-width: 500px;
+}
+
+.node__output-textfield  > .unity-text-field__input{
+	font-size: 11px;
+	height: 35px;
+	max-width: 350px;
+	min-width: 50px;
+}
+
+.node__output-textfield > .unity-text-field__input:focus{
+	margin: 4px;
+	padding: 4px;
+	height: 25px;
+}
+
+.node__dialogue-textfield > .unity-text-field__input{
+	padding: 8px;
+	background-color: #222;
+	border-color: transparent;
+	border-left-color: #333;
+	border-left-width: 4px;
+	max-width: 500px;
+}
+
+.node__dialogue-textfield > .unity-text-field__input:hover{
+	background-color: #333;
+}
+
+.node__dialogue-textfield > .unity-text-field__input:focus{
+	background-color: #111;
+	border-color: #333;
+}
+
+.node__field{
+	padding: 2px;
+	background-color: #222;
+	border-color: transparent;
+	border-left-color: #333;
+	border-left-width: 4px;
+	max-width: 500px;
+	margin-left: 0px;
+}
+
+.extension{
+	background-color: #111;
+}
+
+/*BUTTONS*/
+
+.node__button > .unity-button{
+	background-color: #121212;
+	border-color: #111;
+	margin: 4px;
+}
+
+.node__button:hover{
+	background-color: #222;
+}
+
+.node__button:active{
+	background-color: #333;
+}
+
+/*ELEMENTS*/
+
+TextField{
+	margin-left: 0px;
+}
+
+/*
+DialogueNode #title{
+	background-color: #456;
+}*/
+
+/*BUILT IN*/
+
+.unity-toggle__text{
+	margin-left: 2px;
+}

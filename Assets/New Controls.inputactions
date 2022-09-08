@@ -1,0 +1,34 @@
+{
+    "name": "New Controls",
+    "maps": [
+        {
+            "name": "TEst",
+            "id": "f43ed91d-53b7-4fa6-b1ac-eb6028b28d5d",
+            "actions": [
+                {
+                    "name": "Talk",
+                    "type": "Button",
+                    "id": "1f1e844f-ade9-4b32-aa8d-7e19dd605d78",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f4ea262c-5edf-4b83-b061-f4d15ab177aa",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Talk",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

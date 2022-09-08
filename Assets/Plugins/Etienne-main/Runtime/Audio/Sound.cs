@@ -33,11 +33,11 @@ namespace Etienne
             _ParametersStruct = parameters;
         }
 
-        public AudioSource Play(Transform transform = null)
+	    public PlayingSound Play(Transform transform = null)
         {
             return Pools.AudioSourcePool.Play(this, transform);
         }
-        public AudioSource PlayLooped(Transform transform = null)
+	    public PlayingSound PlayLooped(Transform transform = null)
         {
             return Pools.AudioSourcePool.PlayLooped(this, transform);
         }

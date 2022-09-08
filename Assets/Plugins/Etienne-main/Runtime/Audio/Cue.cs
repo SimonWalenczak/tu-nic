@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Etienne
 {
@@ -34,12 +34,12 @@ namespace Etienne
             return (_Clips == null || _Clips.Length == 0) ? "Nothing" : $"Cue of {_Clips.Length} clips";
         }
 
-        public AudioSource Play(int index, Transform transform = null)
+	    public PlayingSound Play(int index, Transform transform = null)
         {
             return Pools.AudioSourcePool.Play(this, index, transform);
         }
 
-        public AudioSource Play(Transform transform = null)
+	    public PlayingSound Play(Transform transform = null)
         {
             if(_Clips == null || _Clips.Length <= 0)
             {

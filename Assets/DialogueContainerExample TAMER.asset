@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c45406c869b3d294faf4ca9faac25539, type: 3}
+  m_Name: DialogueContainerExample TAMER
+  m_EditorClassIdentifier: 
+  nodes:
+  - id: 0d871114-f139-4cc4-bbb7-0e588880afa1
+    characterName: Character male
+    text: Intro Text dsfolfguidsoufygds
+    choices:
+    - name: bah non
+      nextDialogueID: 68aaeb6c-982b-4ed0-bd31-a1a74810c81c
+    - name: New Choice
+      nextDialogueID: d97b2f1a-c14d-4f00-b6b2-1fd5061e4813
+    characterSprite: {fileID: 21300000, guid: 28daaae508a9323469e2d49777b6ee52, type: 3}
+    backgroundSprite: {fileID: 21300000, guid: 7b512f5d7927298438c0a2c6299d125d, type: 3}
+    position: {x: 162, y: 150}
+    sound: {fileID: 0}
+  - id: 68aaeb6c-982b-4ed0-bd31-a1a74810c81c
+    characterName: Female Character
+    text: '"Next" answer'
+    choices:
+    - name: Next
+      nextDialogueID: a0f119aa-e78c-442f-9931-e6112f5f9859
+    characterSprite: {fileID: 21300000, guid: 483e1a10417d75140b0150490ef3c8a5, type: 3}
+    backgroundSprite: {fileID: 0}
+    position: {x: 517, y: 84}
+    sound: {fileID: 0}
+  - id: d97b2f1a-c14d-4f00-b6b2-1fd5061e4813
+    characterName: Multiple choice
+    text: 'This all goes to the same '
+    choices:
+    - name: Next
+      nextDialogueID: 
+    - name: New Choice1
+      nextDialogueID: e8c8f05c-dc8a-4e50-9efa-ff3ee6b68708
+    - name: New Choice2
+      nextDialogueID: e8c8f05c-dc8a-4e50-9efa-ff3ee6b68708
+    - name: New Choice3
+      nextDialogueID: e8c8f05c-dc8a-4e50-9efa-ff3ee6b68708
+    - name: New Choice
+      nextDialogueID: e8c8f05c-dc8a-4e50-9efa-ff3ee6b68708
+    - name: New Choice
+      nextDialogueID: e8c8f05c-dc8a-4e50-9efa-ff3ee6b68708
+    characterSprite: {fileID: 21300000, guid: 483e1a10417d75140b0150490ef3c8a5, type: 3}
+    backgroundSprite: {fileID: 21300000, guid: 6813cf8825f3764499adf8117375985f, type: 3}
+    position: {x: 517, y: 284.24}
+    sound: {fileID: 0}
+  - id: e8c8f05c-dc8a-4e50-9efa-ff3ee6b68708
+    characterName: Character
+    text: The Said Same One
+    choices:
+    - name: Next
+      nextDialogueID: 04ec8634-f46e-485a-a5be-df8dceb2f581
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 938.4002, y: 284}
+    sound: {fileID: 0}
+  - id: 04ec8634-f46e-485a-a5be-df8dceb2f581
+    characterName: Character
+    text: Text...dasd
+    choices:
+    - name: Next
+      nextDialogueID: 40b513dd-dbb2-46b9-92d9-3d1e00d57824
+    characterSprite: {fileID: 21300000, guid: 7b512f5d7927298438c0a2c6299d125d, type: 3}
+    backgroundSprite: {fileID: 0}
+    position: {x: 1237.6825, y: 284}
+    sound: {fileID: 0}
+  - id: 40b513dd-dbb2-46b9-92d9-3d1e00d57824
+    characterName: Characterasdasda
+    text: Text...dsadasd
+    choices:
+    - name: Next
+      nextDialogueID: 
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 1539.9725, y: 284}
+    sound: {fileID: 0}
+  - id: a0f119aa-e78c-442f-9931-e6112f5f9859
+    characterName: Character
+    text: Text...
+    choices:
+    - name: dasa
+      nextDialogueID: 1f1e768b-62e2-4288-9bbf-c48edc793b8b
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 895.3104, y: 84}
+    sound: {fileID: 0}
+  - id: 1f1e768b-62e2-4288-9bbf-c48edc793b8b
+    characterName: Character
+    text: sadasdsadasd
+    choices:
+    - name: Next
+      nextDialogueID: 
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 1198, y: 48.72}
+    sound: {fileID: 0}
+  firstNode:
+    id: 0d871114-f139-4cc4-bbb7-0e588880afa1
+    characterName: Character male
+    text: Intro Text dsfolfguidsoufygds
+    choices:
+    - name: bah non
+      nextDialogueID: 68aaeb6c-982b-4ed0-bd31-a1a74810c81c
+    - name: New Choice
+      nextDialogueID: d97b2f1a-c14d-4f00-b6b2-1fd5061e4813
+    characterSprite: {fileID: 21300000, guid: 28daaae508a9323469e2d49777b6ee52, type: 3}
+    backgroundSprite: {fileID: 21300000, guid: 7b512f5d7927298438c0a2c6299d125d, type: 3}
+    position: {x: 162, y: 150}
+    sound: {fileID: 0}
