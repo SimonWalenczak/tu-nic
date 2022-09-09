@@ -222,7 +222,7 @@ namespace Tunic
             _mesh.colors32 = colors;
         }
 
-        public IEnumerator GenerateProps(float freqency, GameObject[] props, int minHeight = 0)
+        public void DestroyProps()
         {
             foreach (Transform child in transform)
             {
@@ -230,9 +230,10 @@ namespace Tunic
 
                 Destroy(child.gameObject, 0.25f);
             }
+        }
 
-            yield return new WaitForSeconds(1f);
-
+        public void GenerateProps(float freqency, GameObject[] props, int minHeight = 0)
+        {
             float half = _size / 2f;
 
             for (int i = 0; i < _size; ++i)

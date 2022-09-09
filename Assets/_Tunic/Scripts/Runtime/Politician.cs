@@ -11,6 +11,17 @@ namespace Tunic
         [SerializeField, Etienne.ReadOnly] Grabbable hat;
         [SerializeField] Transform hatParent;
         Fadeable fadeable;
+
+        public enum Role
+        {
+            Conservatism,
+            Progressism,
+            War,
+            Ecology
+        }
+
+        public Role role;
+
         protected void Awake()
         {
             fadeable = GetComponentInChildren<Fadeable>();

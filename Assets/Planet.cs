@@ -46,6 +46,12 @@ namespace Tunic
             StartCoroutine(ApplyCursors());
         }
 
+        [ContextMenu("ApplyCursors")]
+        public void ACB()
+        {
+            StartCoroutine(ApplyCursors());
+        }
+
         private IEnumerator ApplyCursors()
         {
             float seaLevel = 0;
@@ -82,6 +88,8 @@ namespace Tunic
                 if (index < 0)
                     index = 0;
 
+                index = ((index - 1) % scores.Count + scores.Count) % scores.Count;
+
                 props[i] = cursors[index].props[Random.Range(0, cursors[index].props.Length)];
             }
 
@@ -104,8 +112,13 @@ namespace Tunic
             for (int i = 0; i < terrains.Length; ++i)
             {
                 terrains[i].ApplyGradient(gradient);
-                StartCoroutine(terrains[i].GenerateProps(0.005f, props, Mathf.RoundToInt(seaLevel)));
+                terrains[i].DestroyProps();
             }
+
+            yield return new WaitForSeconds(1f);
+
+            for (int i = 0; i < terrains.Length; ++i)
+                terrains[i].GenerateProps(0.005f, props, Mathf.RoundToInt(seaLevel));
 
             yield return new WaitForSeconds(3f);
 
@@ -119,11 +132,6 @@ namespace Tunic
         private void Update()
         {
             transform.rotation *= Quaternion.Euler(2.5f * rotationSpeed * Time.deltaTime, 5f * rotationSpeed * Time.deltaTime, 0);
-        }
-
-        private void OnValidate()
-        {
-            StartCoroutine(ApplyCursors());
         }
     }
 }
