@@ -21,14 +21,16 @@ namespace Tunic
 	    	else FadeOut();
 	    }
 	    
-	    public void FadeIn()
+	    public Tween FadeIn()
 		{
-	    	group.DOFade(1f,.2f);
+			group.interactable=true;
+			return group.DOFade(1f,.2f);
 	    }
 	    
-	    public void FadeOut()
+		public Tween FadeOut()
 	    {
-			group.DOFade(0f,.2f);
+		    group.interactable=false;
+		    return group.DOFade(0f,.2f);
 	    }
     }
 }

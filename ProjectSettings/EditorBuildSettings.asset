@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_Tunic/Scenes/MainMenu.unity
+    guid: e453c8c08bce09e40b68900bdac552d3
+  - enabled: 1
+    path: Assets/_Tunic/Scenes/Level.unity
+    guid: 9b45952df734eb64596dce2e78abc52f
   m_configObjects: {}
