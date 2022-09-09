@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 namespace Tunic
 {
@@ -6,9 +7,12 @@ namespace Tunic
     {
         public event System.Action OnStart, OnComplete;
 
-        [SerializeField] Fadeable canvas;
+	    [SerializeField] Fadeable canvas;
+	    
+	    
         private void OnEnable()
-        {
+	    {
+		    gameObject.SetActive(true);
             canvas.FadeIn();
             OnStart?.Invoke();
             OnStart = null;
@@ -16,7 +20,7 @@ namespace Tunic
 
         private void OnDisable()
         {
-            canvas.FadeOut();
+	        canvas.FadeOut().onComplete+=()=>gameObject.SetActive(false	);
             OnComplete?.Invoke();
             OnComplete = null;
         }
