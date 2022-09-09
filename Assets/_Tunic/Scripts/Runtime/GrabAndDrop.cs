@@ -1,4 +1,4 @@
-using System.Linq;
+﻿using System.Linq;
 using UnityEngine;
 
 namespace Tunic
@@ -51,7 +51,6 @@ namespace Tunic
 
         private void OnTriggerEnter(Collider other)
         {
-            Debug.Log("trigger " + other.gameObject.GetComponents<Component>().Length, other.gameObject);
             if (!other.TryGetComponent<Grabbable>(out _selected))
             {
                 if (!other.TryGetComponent<Politician>(out Politician politician))

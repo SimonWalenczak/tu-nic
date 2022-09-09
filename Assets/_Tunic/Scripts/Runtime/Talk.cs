@@ -27,12 +27,14 @@ namespace Tunic
 		
 		protected override void Select(ISelectable selectable)
 		{
+			if (!(selectable is Politician))return;
 			base.Select(selectable);
 			enabled = true;
 		}
 		
 		protected override void UnSelect(ISelectable selectable)
 		{
+			if (!(selectable is Politician))return;
 			base.UnSelect(selectable);
 			enabled = false;
 		}
