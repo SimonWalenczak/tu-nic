@@ -27,7 +27,7 @@ namespace Tunic
                 totalDownTime += Time.deltaTime;
             }
 
-            if (Input.GetKeyUp(KeyCode.E))
+            if ((_selected != null || _grabbable != null) && Input.GetKeyUp(KeyCode.E))
             {
                 if (_grabbable == null)
                 {
@@ -56,9 +56,9 @@ namespace Tunic
             {
                 if (!other.TryGetComponent<Politician>(out Politician politician))
                 {
-                    _selected = politician.Hat;
                     return;
                 }
+                _selected = politician.Hat;
             }
             Debug.Log(_selected, _selected);
             if (_grabbable == _selected) return;

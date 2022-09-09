@@ -29,7 +29,7 @@ namespace Tunic
             for (int i = 0; i < terrains.Length; ++i)
             {
                 terrains[i].Generate(size);
-                terrains[i].GenerateProps(0.05f, seaLevel);
+                //terrains[i].GenerateProps(0.05f, seaLevel);
             }
         }
 

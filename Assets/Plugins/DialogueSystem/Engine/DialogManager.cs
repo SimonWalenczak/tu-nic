@@ -29,6 +29,7 @@ namespace DS.Engine {
         private DSNodeData currentDialogue;
 
 		private void Awake() {
+            if (container == null) return;
 			dialogues.Clear();
             foreach(DSNodeData dialogue in container.Nodes) {
                 dialogues.Add(dialogue.Id, dialogue);
@@ -39,6 +40,7 @@ namespace DS.Engine {
 		public void SetDialog(DSContainerSO container){
 			this.container = container;
 			Awake();
+            Start();
 			enabled=true;
 		}
 
@@ -50,6 +52,7 @@ namespace DS.Engine {
         }
 
         public void UpdateDialogSequence(DSNodeData dialogue) {
+            if (dialogue == null) return;
             UpdateTexts(dialogue);
             UpdateChoices(dialogue);
 	        UpdateSprites(dialogue);

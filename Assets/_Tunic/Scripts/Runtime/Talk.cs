@@ -40,7 +40,7 @@ namespace Tunic
 		void StartTalking(InputAction.CallbackContext c)
 		{
 			Debug.Log($"Start Talking to {selectable}");
-			var politician = (Politician)selectable;
+			if (!(selectable is Politician politician)) return;
 			var dialogue = GameObject.FindObjectOfType<DialogueManager>();
 			dialogue.SetDialog(politician.Container); 
 			UnSelect(selectable);
