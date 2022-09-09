@@ -23,7 +23,7 @@ namespace Tunic
         private Gradient gradient;
 
         [System.Serializable]
-        class Cursor
+        public class Cursor
         {
             public string name;
             public Color color;
@@ -33,7 +33,7 @@ namespace Tunic
         }
 
         [SerializeField]
-        private Cursor[] cursors;
+        public Cursor[] cursors;
 
         [SerializeField]
 	    private Transform water;
@@ -56,7 +56,7 @@ namespace Tunic
             StartCoroutine(ApplyCursors());
         }
 
-        private IEnumerator ApplyCursors()
+        public IEnumerator ApplyCursors()
         {
             float seaLevel = 0;
 

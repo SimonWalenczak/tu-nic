@@ -831,6 +831,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8730114733478541077, guid: db531b7ff389c4e49bc160d4e487be09, type: 3}
+      propertyPath: role
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8730114733478541083, guid: db531b7ff389c4e49bc160d4e487be09, type: 3}
       propertyPath: m_Name
       value: Politician (2)
@@ -1723,6 +1727,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 9067017031445243090, guid: 2a96bf76cc207f44385f206d4131114b, type: 3}
       propertyPath: m_Name
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067017031445243090, guid: 2a96bf76cc207f44385f206d4131114b, type: 3}
+      propertyPath: m_TagString
       value: Planet
       objectReference: {fileID: 0}
     - target: {fileID: 9067017031445243103, guid: 2a96bf76cc207f44385f206d4131114b, type: 3}
@@ -2657,6 +2665,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8730114733478541077, guid: db531b7ff389c4e49bc160d4e487be09, type: 3}
+      propertyPath: role
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8730114733478541077, guid: db531b7ff389c4e49bc160d4e487be09, type: 3}
       propertyPath: container
       value: 
       objectReference: {fileID: 11400000, guid: 9c5bee6eeca61bc4e9036c76d0a83d15, type: 2}
@@ -3005,6 +3017,10 @@ PrefabInstance:
     - target: {fileID: 8730114733478541076, guid: db531b7ff389c4e49bc160d4e487be09, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8730114733478541077, guid: db531b7ff389c4e49bc160d4e487be09, type: 3}
+      propertyPath: role
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8730114733478541083, guid: db531b7ff389c4e49bc160d4e487be09, type: 3}
       propertyPath: m_Name
