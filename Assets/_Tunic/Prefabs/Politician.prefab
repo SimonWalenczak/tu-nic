@@ -23,13 +23,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7330757123225348047}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.51, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.5000002, y: -0.5000001, z: -0.5, w: -0.49999985}
+  m_LocalPosition: {x: -0.069, y: -0.023, z: -0}
+  m_LocalScale: {x: 0.12499997, y: 0.124999985, z: 0.12499997}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8730114733478541076}
-  m_RootOrder: 2
+  m_Father: {fileID: 1983125045766510197}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8730114733478541083
 GameObject:
@@ -62,7 +62,6 @@ Transform:
   m_Children:
   - {fileID: 3130155056262024199}
   - {fileID: 8730114734826761797}
-  - {fileID: 2767260076386176762}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -80,6 +79,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   container: {fileID: 0}
   hat: {fileID: 0}
+  button: {fileID: 0}
   hatParent: {fileID: 2767260076386176762}
   role: 0
 --- !u!1 &8730114734256646765
@@ -388,6 +388,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 044995dfb921d4e4e933ed5cdb0bf896, type: 3}
+--- !u!4 &1983125045766510197 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3998998238526881177, guid: 044995dfb921d4e4e933ed5cdb0bf896, type: 3}
+  m_PrefabInstance: {fileID: 3240957913310260204}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2322551037163230909 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 044995dfb921d4e4e933ed5cdb0bf896, type: 3}

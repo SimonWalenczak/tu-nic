@@ -9,8 +9,12 @@ namespace Tunic
 
         [SerializeField] DS.Engine.DSContainerSO container;
         [SerializeField, Etienne.ReadOnly] Grabbable hat;
+        [SerializeField] GameObject button;
         [SerializeField] Transform hatParent;
         Fadeable fadeable;
+
+        Renderer buttonRenderer;
+        Color cubeColor;
 
         public enum Role
         {
@@ -25,6 +29,8 @@ namespace Tunic
         protected void Awake()
         {
             fadeable = GetComponentInChildren<Fadeable>();
+            buttonRenderer = button.GetComponent<Renderer>();
+            cubeColor = buttonRenderer.material.color;
         }
 
         void ISelectable.Select()
@@ -39,8 +45,20 @@ namespace Tunic
 
         public void SetHat(Grabbable hat)
         {
+            if (hat != null)
+            {
+                Debug.Log("pas de chapeaux !");
+            }
+
             this.hat = hat;
             hat.SetAsHat(hatParent);
+            buttonRenderer.material.color = hat.refColor;
+        }
+
+        internal void NoHat()
+        {
+            hat = null;
+            buttonRenderer.material.color = cubeColor;
         }
     }
 }

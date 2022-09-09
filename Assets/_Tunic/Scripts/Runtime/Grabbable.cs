@@ -5,8 +5,13 @@ namespace Tunic
 {
     public class Grabbable : MonoBehaviour
     {
+        public Politician Politician => politician;
+
         Rigidbody Myrigidbody;
         new Collider collider;
+        Politician politician;
+
+        public Color refColor;
 
         private void Start()
         {
@@ -16,13 +21,12 @@ namespace Tunic
         public void Grab(Transform parent)
         {
             transform.SetParent(parent);
-            if (parent != null)
-            {
-                transform.DOLocalMove(new Vector3(0, 0.5f, 1.5f), .2f);
-                transform.DORotateQuaternion(parent.rotation, .2f);
-                Myrigidbody.isKinematic = true;
-                collider.enabled = false;
-            }
+            if (parent == null) return;
+            transform.DOLocalMove(new Vector3(0, 0.5f, 1.5f), .2f);
+            transform.DORotateQuaternion(parent.rotation, .2f);
+            Myrigidbody.isKinematic = true;
+            collider.enabled = false;
+            politician = null;
 
             Debug.Log("GRAB");
         }
@@ -40,7 +44,7 @@ namespace Tunic
             transform.SetParent(null);
             collider.enabled = true;
             Myrigidbody.isKinematic = false;
-            Myrigidbody.AddForce(transform.forward * 100);
+            Myrigidbody.AddForce(transform.forward * 20000);
             Debug.Log("THROW");
         }
 
@@ -57,6 +61,7 @@ namespace Tunic
         {
             if (!other.collider.TryGetComponent<Politician>(out Politician _politician)) return;
 
+            politician = _politician;
             _politician.SetHat(this);
         }
     }
