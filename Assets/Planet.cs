@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using DG.Tweening;
 
 namespace Tunic
@@ -40,10 +41,7 @@ namespace Tunic
         private void Start()
         {
             for (int i = 0; i < terrains.Length; ++i)
-            {
                 terrains[i].Generate(size);
-                terrains[i].GenerateProps(0.002f, 5);
-            }
 
             StartCoroutine(ApplyCursors());
         }
@@ -58,8 +56,12 @@ namespace Tunic
 
             float totalScore = 0f;
 
+            List<float> scores = new List<float>();
+
             foreach (Cursor cursor in cursors)
             {
+                scores.Add(totalScore);
+
                 totalScore += cursor.score;
 
                 r += cursor.color.r * cursor.score;
@@ -67,6 +69,20 @@ namespace Tunic
                 b += cursor.color.b * cursor.score;
 
                 seaLevel += cursor.seaLevel * cursor.score;
+            }
+
+            GameObject[] props = new GameObject[25];
+
+            for (int i = 0; i < props.Length; ++i)
+            {
+                float rand = Random.Range(0f, totalScore);
+
+                int index = scores.FindIndex(score => rand < score);
+
+                if (index < 0)
+                    index = 0;
+
+                props[i] = cursors[index].props[Random.Range(0, cursors[index].props.Length)];
             }
 
             seaLevel = Mathf.Round(seaLevel / totalScore);
@@ -82,7 +98,10 @@ namespace Tunic
             gradient.SetKeys(keys, gradient.alphaKeys);
 
             for (int i = 0; i < terrains.Length; ++i)
+            {
                 terrains[i].ApplyGradient(gradient);
+                terrains[i].GenerateProps(0.005f, props, Mathf.RoundToInt(seaLevel));
+            }
 
             water.localScale = seaLevel > 0 ? Vector3.one * (size + seaLevel + 0.1f) : Vector3.zero;
 

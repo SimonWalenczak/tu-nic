@@ -13,9 +13,6 @@ namespace Tunic
         int[,] _heightByPosition;
         int[] _heightByIndex;
 
-        [SerializeField]
-        private GameObject[] prefabs;
-
         private void Awake()
         {
             _mesh = new Mesh();
@@ -223,7 +220,7 @@ namespace Tunic
             _mesh.colors32 = colors;
         }
 
-        public void GenerateProps(float freqency, int minHeight = 0)
+        public void GenerateProps(float freqency, GameObject[] props, int minHeight = 0)
         {
             float half = _size / 2f;
 
@@ -242,7 +239,7 @@ namespace Tunic
                     if (height < minHeight)
                         continue;
 
-                    GameObject prop = Instantiate(prefabs[Random.Range(0, prefabs.Length)], transform);
+                    GameObject prop = Instantiate(props[Random.Range(0, props.Length)], transform);
 
                     prop.transform.localPosition = new Vector3(x, height, z);
                 }
