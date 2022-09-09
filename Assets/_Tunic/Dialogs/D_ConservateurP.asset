@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c45406c869b3d294faf4ca9faac25539, type: 3}
+  m_Name: D_ConservateurP
+  m_EditorClassIdentifier: 
+  nodes:
+  - id: 429b1652-0fda-42bb-a381-7839568982aa
+    characterName: Character
+    text: "Que le progr\xE8s soit avec vous monseigneur ! "
+    choices:
+    - name: Next
+      nextDialogueID: f02caac2-ce80-4126-aa9d-513ff6b80bdd
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 129.46, y: 143.15752}
+    sound: {fileID: 0}
+  - id: f02caac2-ce80-4126-aa9d-513ff6b80bdd
+    characterName: Character
+    text: "J'ai relu les quelques textes et que vous avez adopt\xE9 avec beaucoup
+      de bont\xE9 et j'aimerais vous proposer quelques changements. "
+    choices:
+    - name: Next
+      nextDialogueID: 59014e4d-65b1-4dba-bb42-ca66cf201933
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 520.13, y: 149.51498}
+    sound: {fileID: 0}
+  - id: 59014e4d-65b1-4dba-bb42-ca66cf201933
+    characterName: Character
+    text: "Concernant l'alin\xE9a 2 de la bible de la sainte SNES, je pense qu'il
+      serait judicieux de d\xE9caler l'heure de la grande pri\xE8re \xE0 midi moins
+      soixante deux pour profiter des au mieux des globes \xE9lectrolumin\xE9on. "
+    choices:
+    - name: Doucement doucement j'ai trop d'information..
+      nextDialogueID: f9c44ab1-a128-48dc-adb7-d7cea08557ca
+    - name: "C'est une tr\xE8s bonne id\xE9e, que puis-je faire pour cela ?"
+      nextDialogueID: 49d1fdc9-aa09-4c24-8866-4758fc2ca574
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 1156.355, y: 151.67754}
+    sound: {fileID: 0}
+  - id: f9c44ab1-a128-48dc-adb7-d7cea08557ca
+    characterName: Character
+    text: "D\xE9sol\xE9 , monseigneur. Le plus important \xE0 retenir c'est, comme
+      le dit si bien la grande carte m\xE8re \"Sur le bouton tu appuiera, et futur
+      tu d\xE9couvrira !\""
+    choices:
+    - name: Next
+      nextDialogueID: 
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 1812.3552, y: 37.677498}
+    sound: {fileID: 0}
+  - id: 49d1fdc9-aa09-4c24-8866-4758fc2ca574
+    characterName: Character
+    text: "Comme le dit le dixi\xE8me commandement de la sainte console \"Tu appuiera
+      sur mon bouton avec bienveillance\"."
+    choices:
+    - name: Next
+      nextDialogueID: 
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 1820.3551, y: 300.67752}
+    sound: {fileID: 0}
+  firstNode:
+    id: 429b1652-0fda-42bb-a381-7839568982aa
+    characterName: Character
+    text: "Que le progr\xE8s soit avec vous monseigneur ! "
+    choices:
+    - name: Next
+      nextDialogueID: f02caac2-ce80-4126-aa9d-513ff6b80bdd
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 129.46, y: 143.15752}
+    sound: {fileID: 0}
