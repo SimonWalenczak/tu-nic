@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c45406c869b3d294faf4ca9faac25539, type: 3}
+  m_Name: D_EcoloC
+  m_EditorClassIdentifier: 
+  nodes:
+  - id: 3c5ed6c5-f24f-4094-b13b-85922e95c3c5
+    characterName: Character
+    text: "Pr\xE9servons la plan\xE8te , comme le bon vieux temps nous le dit. Alors
+      je vais te faire une proposition."
+    choices:
+    - name: Next
+      nextDialogueID: 016418f1-a225-4f6a-85ca-ab10e11b7e04
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
+    backgroundSprite: {fileID: 0}
+    position: {x: 349, y: 76}
+    sound: {fileID: 0}
+  - id: 016418f1-a225-4f6a-85ca-ab10e11b7e04
+    characterName: Character
+    text: "Il nous faudrait des maisons anciennes avec des mobiliers m\xE9di\xE9val.
+      La nature en serait un grand avantage pour les utiliser. Comme le saut d'eau
+      de bois par exemple."
+    choices:
+    - name: "L'id\xE9e est bonne, ne serait tu pas concervateur ?"
+      nextDialogueID: 5ff90342-1b88-4e2c-9d64-b693b60d739a
+    - name: Ne serait tu pas Ecologiste ?
+      nextDialogueID: 5b9c5612-72dc-4ed7-9689-6f4f985fe677
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
+    backgroundSprite: {fileID: 0}
+    position: {x: 923, y: 78}
+    sound: {fileID: 0}
+  - id: 5ff90342-1b88-4e2c-9d64-b693b60d739a
+    characterName: Character
+    text: "Il nous faudrait des maisons anciennes avec des mobiliers m\xE9di\xE9val.
+      La nature en serait un grand avantage pour les utiliser. Comme le saut d'eau
+      de bois par exemple."
+    choices:
+    - name: Next
+      nextDialogueID: 
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
+    backgroundSprite: {fileID: 0}
+    position: {x: 1520, y: -43}
+    sound: {fileID: 0}
+  - id: 5b9c5612-72dc-4ed7-9689-6f4f985fe677
+    characterName: Character
+    text: Qu'est...qu'est ce qui te fait dire sa ?
+    choices:
+    - name: Next
+      nextDialogueID: 
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
+    backgroundSprite: {fileID: 0}
+    position: {x: 1547, y: 238}
+    sound: {fileID: 0}
+  firstNode:
+    id: 3c5ed6c5-f24f-4094-b13b-85922e95c3c5
+    characterName: Character
+    text: "Pr\xE9servons la plan\xE8te , comme le bon vieux temps nous le dit. Alors
+      je vais te faire une proposition."
+    choices:
+    - name: Next
+      nextDialogueID: 016418f1-a225-4f6a-85ca-ab10e11b7e04
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
+    backgroundSprite: {fileID: 0}
+    position: {x: 349, y: 76}
+    sound: {fileID: 0}

@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c45406c869b3d294faf4ca9faac25539, type: 3}
+  m_Name: D_ConcervateurG
+  m_EditorClassIdentifier: 
+  nodes:
+  - id: 1bba452b-1668-4490-9db4-6f0802744cc1
+    characterName: Character
+    text: "Bonjour grand chef des saintes arm\xE9es ! Je reviens vers vous pour vous
+      apporter les conseilles que j'ai lu dans les saintes \xE9critures. "
+    choices:
+    - name: Next
+      nextDialogueID: c50529ef-c100-49d5-8133-c04452af8c53
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
+    backgroundSprite: {fileID: 0}
+    position: {x: 266, y: 109}
+    sound: {fileID: 0}
+  - id: c50529ef-c100-49d5-8133-c04452af8c53
+    characterName: Character
+    text: "J'ai vu que vous avez mis beaucoup d'\xE9nergie dans la cr\xE9ation de
+      vos arm\xE9es mais la sainte parole ma conseill\xE9e d'essayer une m\xE9thode
+      plus pacifique. "
+    choices:
+    - name: "Hum je vous \xE9coute "
+      nextDialogueID: 7169c5cc-1ce3-40d1-ad04-56d917014c41
+    - name: "Cela ne m'int\xE9resse pas vraiment"
+      nextDialogueID: 829a9ef7-42b0-4e26-aa57-e7bd461f8990
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
+    backgroundSprite: {fileID: 0}
+    position: {x: 822, y: 119}
+    sound: {fileID: 0}
+  - id: 7169c5cc-1ce3-40d1-ad04-56d917014c41
+    characterName: Character
+    text: "Je vous propose de vous munir des grands textes bibliques que vous allez
+      pouvoir distribuer \xE0 toutes les populations encore h\xE9r\xE9tique. "
+    choices:
+    - name: Next
+      nextDialogueID: 749fe33e-13b3-4db5-ab34-b5f44b7db060
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
+    backgroundSprite: {fileID: 0}
+    position: {x: 1385, y: 23}
+    sound: {fileID: 0}
+  - id: 829a9ef7-42b0-4e26-aa57-e7bd461f8990
+    characterName: Character
+    text: "Vous m'envoyez d\xE9\xE7u grand chef des arm\xE9es. Si vous changez d'avis
+      il suffit de vous rediriger vers le chemin du bouton. "
+    choices:
+    - name: Next
+      nextDialogueID: 
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
+    backgroundSprite: {fileID: 0}
+    position: {x: 1396, y: 322}
+    sound: {fileID: 0}
+  - id: 749fe33e-13b3-4db5-ab34-b5f44b7db060
+    characterName: Character
+    text: "Je vous invite \xE0 vous diriger vers le chemin du saint bouton"
+    choices:
+    - name: Next
+      nextDialogueID: 
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
+    backgroundSprite: {fileID: 0}
+    position: {x: 1979, y: 27}
+    sound: {fileID: 0}
+  firstNode:
+    id: 1bba452b-1668-4490-9db4-6f0802744cc1
+    characterName: Character
+    text: "Bonjour grand chef des saintes arm\xE9es ! Je reviens vers vous pour vous
+      apporter les conseilles que j'ai lu dans les saintes \xE9critures. "
+    choices:
+    - name: Next
+      nextDialogueID: c50529ef-c100-49d5-8133-c04452af8c53
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
+    backgroundSprite: {fileID: 0}
+    position: {x: 266, y: 109}
+    sound: {fileID: 0}
