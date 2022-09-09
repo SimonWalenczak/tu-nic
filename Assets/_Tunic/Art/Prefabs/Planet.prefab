@@ -96,8 +96,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f912744d4c059945b86c7573deac14c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabs:
-  - {fileID: 4042614774008679367, guid: 1db50ce8b9fd2de4daec643741415eb4, type: 3}
 --- !u!1 &9067017029914489107
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,8 +192,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f912744d4c059945b86c7573deac14c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabs:
-  - {fileID: 4042614774008679367, guid: 1db50ce8b9fd2de4daec643741415eb4, type: 3}
 --- !u!1 &9067017030152962582
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,8 +385,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f912744d4c059945b86c7573deac14c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabs:
-  - {fileID: 4042614774008679367, guid: 1db50ce8b9fd2de4daec643741415eb4, type: 3}
 --- !u!1 &9067017031011961710
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,8 +481,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f912744d4c059945b86c7573deac14c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabs:
-  - {fileID: 4042614774008679367, guid: 1db50ce8b9fd2de4daec643741415eb4, type: 3}
 --- !u!1 &9067017031346563396
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,8 +577,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f912744d4c059945b86c7573deac14c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabs:
-  - {fileID: 4042614774008679367, guid: 1db50ce8b9fd2de4daec643741415eb4, type: 3}
 --- !u!1 &9067017031445243090
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,6 +589,7 @@ GameObject:
   - component: {fileID: 9067017031445243100}
   - component: {fileID: 9067017031445243101}
   - component: {fileID: 9067017031445243102}
+  - component: {fileID: 8878144880486663696}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Untagged
@@ -614,9 +605,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9067017031445243090}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 2.2, z: 30.2}
+  m_LocalScale: {x: 0.07, y: 0.07, z: 0.07}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 9067017029638532420}
   - {fileID: 9067017031563492813}
@@ -700,18 +691,18 @@ MonoBehaviour:
   - {fileID: 9067017029914489117}
   - {fileID: 9067017031346563398}
   - {fileID: 9067017031011961704}
-  gradients:
-  - serializedVersion: 2
-    key0: {r: 0.9245283, g: 0.87526375, b: 0.7195621, a: 1}
-    key1: {r: 0.35077363, g: 0.7735849, b: 0.3466536, a: 1}
-    key2: {r: 0.28973123, g: 0.3679245, b: 0.26205945, a: 0}
+  gradient:
+    serializedVersion: 2
+    key0: {r: 0.9056604, g: 0.88167274, b: 0.56817377, a: 1}
+    key1: {r: 0.56770986, g: 0.43380135, b: 0.21112597, a: 1}
+    key2: {r: 0.32086083, g: 0.4056604, b: 0.28128338, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 12722
-    ctime1: 49344
+    ctime0: 11758
+    ctime1: 52235
     ctime2: 65535
     ctime3: 0
     ctime4: 0
@@ -720,7 +711,7 @@ MonoBehaviour:
     ctime7: 0
     atime0: 0
     atime1: 65535
-    atime2: 65535
+    atime2: 0
     atime3: 0
     atime4: 0
     atime5: 0
@@ -729,147 +720,49 @@ MonoBehaviour:
     m_Mode: 1
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
-  - serializedVersion: 2
-    key0: {r: 0.9245283, g: 0.87526375, b: 0.7195621, a: 1}
-    key1: {r: 0.77254903, g: 0.44348353, b: 0.34509805, a: 1}
-    key2: {r: 0.28973123, g: 0.3679245, b: 0.26205945, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 12722
-    ctime1: 49344
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 65535
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 1
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  - serializedVersion: 2
-    key0: {r: 0.9245283, g: 0.87526375, b: 0.7195621, a: 1}
-    key1: {r: 0.35077363, g: 0.7735849, b: 0.3466536, a: 1}
-    key2: {r: 0.28973123, g: 0.3679245, b: 0.26205945, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 12722
-    ctime1: 49344
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 65535
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 1
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  - serializedVersion: 2
-    key0: {r: 0.9245283, g: 0.87526375, b: 0.7195621, a: 1}
-    key1: {r: 0.35077363, g: 0.7735849, b: 0.3466536, a: 1}
-    key2: {r: 0.28973123, g: 0.3679245, b: 0.26205945, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 12722
-    ctime1: 49344
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 65535
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 1
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  - serializedVersion: 2
-    key0: {r: 0.9245283, g: 0.87526375, b: 0.7195621, a: 1}
-    key1: {r: 0.35077363, g: 0.7735849, b: 0.3466536, a: 1}
-    key2: {r: 0.28973123, g: 0.3679245, b: 0.26205945, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 12722
-    ctime1: 49344
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 65535
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 1
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  - serializedVersion: 2
-    key0: {r: 0.9245283, g: 0.87526375, b: 0.7195621, a: 1}
-    key1: {r: 0.35077363, g: 0.7735849, b: 0.3466536, a: 1}
-    key2: {r: 0.28973123, g: 0.3679245, b: 0.26205945, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 12722
-    ctime1: 49344
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 65535
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 1
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
+  cursors:
+  - name: war
+    color: {r: 0.8, g: 0.30588236, b: 0.32941177, a: 0}
+    seaLevel: 0
+    props:
+    - {fileID: 1043628034228418765, guid: 1d1dd9a9a2016424b8b62e7239dfb19c, type: 3}
+    - {fileID: 4669109225066546816, guid: 6e5ab76a862b18a4c88e73cedb938c0c, type: 3}
+    score: 2.67
+  - name: ecology
+    color: {r: 0.4509804, g: 0.8, b: 0.30588236, a: 0}
+    seaLevel: 5
+    props:
+    - {fileID: 7524987301120556558, guid: 1fe0c99a837b6bc4aa43294f34ff79f1, type: 3}
+    score: 0.82
+  - name: progressism
+    color: {r: 0.8113208, g: 0.7829467, b: 0.17986828, a: 0}
+    seaLevel: 3
+    props:
+    - {fileID: 7524987301120556558, guid: a3fad929a456b3247b2bd4274eca6f5b, type: 3}
+    score: 2.67
+  - name: conservatism
+    color: {r: 0.3018868, g: 0.23222724, b: 0.14097543, a: 1}
+    seaLevel: 2
+    props:
+    - {fileID: 1093621011082932286, guid: fd05f4efcb92f1440b6f31e0dee690ae, type: 3}
+    score: 4.42
   water: {fileID: 9067017030152962577}
+--- !u!114 &8878144880486663696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9067017031445243090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77ac9b99756fc824c9491c9e4fe1ec79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  invertY: 1
+  Spin: {x: 0, y: 0}
+  planet: {fileID: 9067017031445243103}
 --- !u!1 &9067017031563492802
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,5 +859,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f912744d4c059945b86c7573deac14c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabs:
-  - {fileID: 4042614774008679367, guid: 1db50ce8b9fd2de4daec643741415eb4, type: 3}

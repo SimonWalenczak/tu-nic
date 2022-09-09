@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
+using DG.Tweening;
 
 namespace Tunic
 {
@@ -220,8 +222,17 @@ namespace Tunic
             _mesh.colors32 = colors;
         }
 
-        public void GenerateProps(float freqency, GameObject[] props, int minHeight = 0)
+        public IEnumerator GenerateProps(float freqency, GameObject[] props, int minHeight = 0)
         {
+            foreach (Transform child in transform)
+            {
+                child.DOScale(Vector3.zero, 0.25f);
+
+                Destroy(child.gameObject, 0.25f);
+            }
+
+            yield return new WaitForSeconds(1f);
+
             float half = _size / 2f;
 
             for (int i = 0; i < _size; ++i)
@@ -242,6 +253,12 @@ namespace Tunic
                     GameObject prop = Instantiate(props[Random.Range(0, props.Length)], transform);
 
                     prop.transform.localPosition = new Vector3(x, height, z);
+
+                    Vector3 scale = prop.transform.localScale;
+
+                    prop.transform.localScale = Vector3.zero;
+
+                    prop.transform.DOScale(scale, 0.25f);
                 }
             }
         }
