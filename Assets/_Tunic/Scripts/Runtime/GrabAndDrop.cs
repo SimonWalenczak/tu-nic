@@ -11,7 +11,6 @@ namespace Tunic
 
 
         public float ClickDuration = 0.7f;
-        bool clicking = false;
         float totalDownTime = 0;
 
         private void Start()
@@ -32,6 +31,7 @@ namespace Tunic
                 if (_grabbable == null)
                 {
                     _grabbable = _selected;
+                    _grabbable.Politician?.NoHat();
                     _grabbable.Grab(transform);
                     _selected = null;
                     trigger.enabled = false;

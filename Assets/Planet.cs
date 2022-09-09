@@ -23,7 +23,7 @@ namespace Tunic
         private Gradient gradient;
 
         [System.Serializable]
-        class Cursor
+        public class Cursor
         {
             public string name;
             public Color color;
@@ -33,7 +33,7 @@ namespace Tunic
         }
 
         [SerializeField]
-        private Cursor[] cursors;
+        public Cursor[] cursors;
 
         [SerializeField]
 	    private Transform water;
@@ -50,7 +50,13 @@ namespace Tunic
             StartCoroutine(ApplyCursors());
         }
 
-        private IEnumerator ApplyCursors()
+        [ContextMenu("ApplyCursors")]
+        public void ACB()
+        {
+            StartCoroutine(ApplyCursors());
+        }
+
+        public IEnumerator ApplyCursors()
         {
             float seaLevel = 0;
 
@@ -86,6 +92,8 @@ namespace Tunic
                 if (index < 0)
                     index = 0;
 
+                index = ((index - 1) % scores.Count + scores.Count) % scores.Count;
+
                 props[i] = cursors[index].props[Random.Range(0, cursors[index].props.Length)];
             }
 
@@ -108,10 +116,15 @@ namespace Tunic
             for (int i = 0; i < terrains.Length; ++i)
             {
                 terrains[i].ApplyGradient(gradient);
-                StartCoroutine(terrains[i].GenerateProps(0.005f, props, Mathf.RoundToInt(seaLevel)));
+                terrains[i].DestroyProps();
             }
 
-           if(!isPreview) yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(1f);
+
+            for (int i = 0; i < terrains.Length; ++i)
+                terrains[i].GenerateProps(0.005f, props, Mathf.RoundToInt(seaLevel));
+
+            yield return new WaitForSeconds(3f);
 
 	        CameraSwapper.Instance?.ToBase();
 
@@ -123,11 +136,6 @@ namespace Tunic
         private void Update()
         {
             transform.rotation *= Quaternion.Euler(2.5f * rotationSpeed * Time.deltaTime, 5f * rotationSpeed * Time.deltaTime, 0);
-        }
-
-        private void OnValidate()
-        {
-        	if (DEBUG)StartCoroutine(ApplyCursors());
         }
     }
 }
