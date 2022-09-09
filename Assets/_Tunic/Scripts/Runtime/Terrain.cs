@@ -1,80 +1,40 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace Tunic
 {
+    [RequireComponent(typeof(MeshFilter))]
     public class Terrain : MonoBehaviour
     {
-        private Mesh mesh;
+        private Mesh _mesh;
+
+        int _size;
+
+        int[,] _heightByPosition;
+        int[] _heightByIndex;
 
         [SerializeField]
-        private int size = 100;
+        private GameObject[] prefabs;
 
-        [SerializeField]
-        private int cubeSize = 1;
-
-        [SerializeField]
-        private float minNoise;
-
-        [SerializeField]
-        private float maxNoise;
-
-        [SerializeField]
-        private float minModifier;
-
-        [SerializeField]
-        private float maxModifier;
-
-        int[,] heights;
-
-        List<Vector3> vertices;
-        List<int> triangles;
-        List<Color32> colors;
-
-        [SerializeField]
-        Gradient gradient;
-
-        private void Start()
+        private void Awake()
         {
-            heights = new int[size, size];
+            _mesh = new Mesh();
+            _mesh.name = "Terrain";
 
-            vertices = new List<Vector3>();
-            triangles = new List<int>();
-            colors = new List<Color32>();
-
-            mesh = new Mesh();
-            mesh.name = "Terrain";
-
-            GetComponent<MeshFilter>().mesh = mesh;
-
-            Generate();
+            GetComponent<MeshFilter>().mesh = _mesh;
         }
 
-        [ContextMenu("Regenerate")]
-        private void Regenerate()
+        public void Generate(int size, float minNoise = 5f, float maxNoise = 10f, float minModifier = 15f, float maxModifier = 25f)
         {
-            foreach (Transform child in transform)
-                Destroy(child.gameObject);
+            _size = size;
 
-            Generate();
-        }
+            _heightByPosition = new int[size, size];
 
-        private int getHeight(int x, int z)
-        {
-            if (x >= size || x < 0 || z >= size || z < 0)
-                return -1;
+            List<Vector3> vertices = new List<Vector3>();
+            List<int> triangles = new List<int>();
 
-            return heights[x, z];
-        }
+            List<int> heightByIndex = new List<int>();
 
-        private Color32 colorByHeight(int height)
-        {
-            return gradient.Evaluate(height / 15f);
-        }
-
-        private void Generate()
-        {
             void addTriangles(int index)
             {
                 triangles.Add(index + 1);
@@ -89,44 +49,47 @@ namespace Tunic
             float scale = Random.Range(minNoise, maxNoise);
             float scaleModifier = Random.Range(minModifier, maxModifier);
 
-            float half = size / 2f;
+            float half = _size / 2f;
 
-            for (int x = 0; x < size; ++x)
+            for (int i = 0; i < _size; ++i)
             {
-                for (int z = 0; z < size; ++z)
+                for (int j = 0; j < _size; ++j)
                 {
+                    float x = -half + i;
+                    float z = -half + j;
+
                     float delta = Random.Range(scale / 10, scale / 9);
 
-                    float noise = Mathf.PerlinNoise(x / (scale + delta), z / (scale + delta));
+                    float noise = Mathf.PerlinNoise(i / (scale + delta), j / (scale + delta));
 
-                    float xScore = Mathf.Abs(half - x);
-                    float zScore = Mathf.Abs(half - z);
+                    float xScore = Mathf.Abs(half - i);
+                    float zScore = Mathf.Abs(half - j);
 
                     float heightModifier = 1f - Mathf.Max(xScore, zScore) / half;
 
                     int height = Mathf.RoundToInt(noise * scaleModifier * heightModifier);
 
-                    heights[x, z] = height;
+                    _heightByPosition[i, j] = height;
 
                     vertices.Add(new Vector3(x, height, z));
-                    vertices.Add(new Vector3(x + cubeSize, height, z));
-                    vertices.Add(new Vector3(x, height, z + cubeSize));
-                    vertices.Add(new Vector3(x + cubeSize, height, z + cubeSize));
+                    vertices.Add(new Vector3(x + 1f, height, z));
+                    vertices.Add(new Vector3(x, height, z + 1f));
+                    vertices.Add(new Vector3(x + 1f, height, z + 1f));
 
-                    colors.Add(colorByHeight(height));
-                    colors.Add(colorByHeight(height));
-                    colors.Add(colorByHeight(height));
-                    colors.Add(colorByHeight(height));
+                    heightByIndex.Add(height);
+                    heightByIndex.Add(height);
+                    heightByIndex.Add(height);
+                    heightByIndex.Add(height);
                 }
             }
 
-            for (int x = 0; x < size; ++x)
+            for (int i = 0; i < _size; ++i)
             {
-                int line = x * size;
+                int line = i * _size;
 
-                for (int z = 0; z < size; ++z)
+                for (int j = 0; j < _size; ++j)
                 {
-                    int index = (line + z) * 4;
+                    int index = (line + j) * 4;
 
                     triangles.Add(index);
                     triangles.Add(index + 3);
@@ -136,13 +99,13 @@ namespace Tunic
                     triangles.Add(index + 2);
                     triangles.Add(index + 3);
 
-                    int height = getHeight(x, z);
+                    int height = GetHeight(i, j);
 
-                    int west = getHeight(x - 1, z);
+                    int west = GetHeight(i - 1, j);
 
-                    if (west >= 0 || west > height)
+                    if (west >= 0 && west > height)
                     {
-                        int otherIndex = ((x - 1) * size + z) * 4;
+                        int otherIndex = ((i - 1) * _size + j) * 4;
 
                         int current = vertices.Count;
 
@@ -151,19 +114,19 @@ namespace Tunic
                         vertices.Add(vertices[otherIndex + 1]);
                         vertices.Add(vertices[otherIndex + 3]);
 
-                        colors.Add(colorByHeight(height));
-                        colors.Add(colorByHeight(height));
-                        colors.Add(colorByHeight(west));
-                        colors.Add(colorByHeight(west));
+                        heightByIndex.Add(height);
+                        heightByIndex.Add(height);
+                        heightByIndex.Add(west);
+                        heightByIndex.Add(west);
 
                         addTriangles(current);
                     }
 
-                    int north = getHeight(x, z + 1);
+                    int north = GetHeight(i, j + 1);
 
-                    if (north >= 0 || north > height)
+                    if (north >= 0 && north > height)
                     {
-                        int otherIndex = (x * size + z + 1) * 4;
+                        int otherIndex = (i * _size + j + 1) * 4;
 
                         int current = vertices.Count;
 
@@ -172,19 +135,19 @@ namespace Tunic
                         vertices.Add(vertices[otherIndex]);
                         vertices.Add(vertices[otherIndex + 1]);
 
-                        colors.Add(colorByHeight(height));
-                        colors.Add(colorByHeight(height));
-                        colors.Add(colorByHeight(north));
-                        colors.Add(colorByHeight(north));
+                        heightByIndex.Add(height);
+                        heightByIndex.Add(height);
+                        heightByIndex.Add(north);
+                        heightByIndex.Add(north);
 
                         addTriangles(current);
                     }
 
-                    int east = getHeight(x + 1, z);
+                    int east = GetHeight(i + 1, j);
 
                     if (east >= 0 && east > height)
                     {
-                        int otherIndex = ((x + 1) * size + z) * 4;
+                        int otherIndex = ((i + 1) * _size + j) * 4;
 
                         int current = vertices.Count;
 
@@ -193,19 +156,19 @@ namespace Tunic
                         vertices.Add(vertices[otherIndex + 2]);
                         vertices.Add(vertices[otherIndex]);
 
-                        colors.Add(colorByHeight(height));
-                        colors.Add(colorByHeight(height));
-                        colors.Add(colorByHeight(east));
-                        colors.Add(colorByHeight(east));
+                        heightByIndex.Add(height);
+                        heightByIndex.Add(height);
+                        heightByIndex.Add(east);
+                        heightByIndex.Add(east);
 
                         addTriangles(current);
                     }
 
-                    int south = getHeight(x, z - 1);
+                    int south = GetHeight(i, j - 1);
 
                     if (south >= 0 && south > height)
                     {
-                        int otherIndex = (x * size + z - 1) * 4;
+                        int otherIndex = (i * _size + j - 1) * 4;
 
                         int current = vertices.Count;
 
@@ -214,25 +177,76 @@ namespace Tunic
                         vertices.Add(vertices[otherIndex + 3]);
                         vertices.Add(vertices[otherIndex + 2]);
 
-                        colors.Add(colorByHeight(height));
-                        colors.Add(colorByHeight(height));
-                        colors.Add(colorByHeight(south));
-                        colors.Add(colorByHeight(south));
+                        heightByIndex.Add(height);
+                        heightByIndex.Add(height);
+                        heightByIndex.Add(south);
+                        heightByIndex.Add(south);
 
                         addTriangles(current);
                     }
                 }
             }
 
-            mesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;
+            _mesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;
 
-            mesh.Clear();
+            _mesh.Clear();
 
-            mesh.vertices = vertices.ToArray();
-            mesh.triangles = triangles.ToArray();
-            mesh.colors32 = colors.ToArray();
+            _mesh.vertices = vertices.ToArray();
+            _mesh.triangles = triangles.ToArray();
 
-            mesh.RecalculateNormals();
+            _mesh.RecalculateNormals();
+
+            _heightByIndex = heightByIndex.ToArray();
+        }
+
+        private int GetHeight(int i, int j)
+        {
+            if (i >= _size || i < 0 || j >= _size || j < 0)
+                return -1;
+
+            return _heightByPosition[i, j];
+        }
+
+        public void ApplyGradient(Gradient gradient)
+        {
+            int length = _mesh.vertices.Length;
+
+            Color32[] colors = new Color32[length];
+
+            for (int i = 0; i < length; ++i)
+            {
+                int height = _heightByIndex[i];
+
+                colors[i] = gradient.Evaluate(height / 15f);
+            }
+
+            _mesh.colors32 = colors;
+        }
+
+        public void GenerateProps(float freqency, int minHeight = 0)
+        {
+            float half = _size / 2f;
+
+            for (int i = 0; i < _size; ++i)
+            {
+                for (int j = 0; j < _size; ++j)
+                {
+                    if (Random.Range(0f, 1f) > freqency)
+                        continue;
+
+                    float x = -half + i;
+                    float z = -half + j;
+
+                    int height = _heightByPosition[i, j];
+
+                    if (height < minHeight)
+                        continue;
+
+                    GameObject prop = Instantiate(prefabs[Random.Range(0, prefabs.Length)], transform);
+
+                    prop.transform.localPosition = new Vector3(x, height, z);
+                }
+            }
         }
     }
 }

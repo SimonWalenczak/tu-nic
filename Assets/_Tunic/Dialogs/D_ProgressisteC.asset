@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c45406c869b3d294faf4ca9faac25539, type: 3}
+  m_Name: D_ProgressisteC
+  m_EditorClassIdentifier: 
+  nodes:
+  - id: 9e55d7bc-717e-41a7-9b63-b3ba1dab393c
+    characterName: Character
+    text: "Ho vous vois voil\xE0 ! Je viens justement de finir de lire les saintes
+      \xE9critures (J'en ai profit\xE9 pour int\xE9grer une petite am\xE9lioration
+      dans la couverture pour pouvoir tourner les pages de mani\xE8re plus efficaces
+      !)"
+    choices:
+    - name: 'Et qu''en pensez vous ? '
+      nextDialogueID: 1993c8ed-7123-4934-a20a-d22696c1c859
+    - name: "Vous avez fait quoi \xE0 la couverture ?!"
+      nextDialogueID: 65a9c705-0a9b-4891-ae98-cb5b49497a31
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 252, y: 26}
+    sound: {fileID: 0}
+  - id: 1993c8ed-7123-4934-a20a-d22696c1c859
+    characterName: Character
+    text: "De mon point de vue la base fonctionne tr\xE8s bien, cependant quelques
+      am\xE9liorations ne serait pas de trop. "
+    choices:
+    - name: Next
+      nextDialogueID: 712010ca-be20-4332-b3ce-3b7b00c0b403
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 880, y: -86}
+    sound: {fileID: 0}
+  - id: 65a9c705-0a9b-4891-ae98-cb5b49497a31
+    characterName: Character
+    text: "Ce n'est trois fois rien, cela ne m'a pas pris longtemps ! D'ailleurs
+      je pense aussi \xE0 apporter quelques am\xE9liorations suppl\xE9mentaire. "
+    choices:
+    - name: Next
+      nextDialogueID: 712010ca-be20-4332-b3ce-3b7b00c0b403
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 884, y: 188}
+    sound: {fileID: 0}
+  - id: 712010ca-be20-4332-b3ce-3b7b00c0b403
+    characterName: Character
+    text: "Je pense qu'il faudrait ajouter des r\xE9acteurs MK6000 au niveaux du
+      bas des pages pour optimiser le rendement de la lecture des saintes paroles."
+    choices:
+    - name: "Alors je pense qu'il faudra en discuter avec les grandes instances tout
+        de m\xEAme !"
+      nextDialogueID: fe3ea6b7-c5e3-4673-9ed6-b3dda68b3291
+    - name: Cela ma semble tout t'a fait recevable !
+      nextDialogueID: fe3ea6b7-c5e3-4673-9ed6-b3dda68b3291
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 1506, y: 66}
+    sound: {fileID: 0}
+  - id: fe3ea6b7-c5e3-4673-9ed6-b3dda68b3291
+    characterName: Character
+    text: "Mais oui mais oui ! Dans tout les cas le bouton est juste l\xE0."
+    choices:
+    - name: Next
+      nextDialogueID: 
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 2094.4524, y: 77.0325}
+    sound: {fileID: 0}
+  firstNode:
+    id: 9e55d7bc-717e-41a7-9b63-b3ba1dab393c
+    characterName: Character
+    text: "Ho vous vois voil\xE0 ! Je viens justement de finir de lire les saintes
+      \xE9critures (J'en ai profit\xE9 pour int\xE9grer une petite am\xE9lioration
+      dans la couverture pour pouvoir tourner les pages de mani\xE8re plus efficaces
+      !)"
+    choices:
+    - name: 'Et qu''en pensez vous ? '
+      nextDialogueID: 1993c8ed-7123-4934-a20a-d22696c1c859
+    - name: "Vous avez fait quoi \xE0 la couverture ?!"
+      nextDialogueID: 65a9c705-0a9b-4891-ae98-cb5b49497a31
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 252, y: 26}
+    sound: {fileID: 0}

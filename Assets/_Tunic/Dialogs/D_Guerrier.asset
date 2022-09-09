@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c45406c869b3d294faf4ca9faac25539, type: 3}
+  m_Name: D_Guerrier
+  m_EditorClassIdentifier: 
+  nodes:
+  - id: 7628f66a-1220-4a74-af6d-2d51f34f1850
+    characterName: 'Guerrier '
+    text: BONJOUR CHEF ! CONTENT DE VOUS VOIR CHEF ! COMMENT ALLEZ VOUS CHEF ?
+    choices:
+    - name: "Repos Soldat ! Je vais tr\xE8s bien je vous remercie."
+      nextDialogueID: eabacd05-ef67-4b1c-821a-df5faa9202eb
+    - name: 'Wow wow wow, pouvez vous parler moins fort ? '
+      nextDialogueID: eabacd05-ef67-4b1c-821a-df5faa9202eb
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 245, y: 115}
+    sound: {fileID: 0}
+  - id: eabacd05-ef67-4b1c-821a-df5faa9202eb
+    characterName: 'Guerrier '
+    text: D'accord CHEF !
+    choices:
+    - name: Next
+      nextDialogueID: 7b3d17e0-78a7-407c-a41c-1cd0b95f4c5f
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 838, y: 127}
+    sound: {fileID: 0}
+  - id: 7b3d17e0-78a7-407c-a41c-1cd0b95f4c5f
+    characterName: 'Guerrier '
+    text: "D'ailleurs notre derni\xE8re mission est un sacr\xE9 succ\xE8s ! "
+    choices:
+    - name: Next
+      nextDialogueID: 
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 1245, y: 128}
+    sound: {fileID: 0}
+  - id: 53946343-0617-4d77-8bbd-0f43ab8503a6
+    characterName: 'Guerrier '
+    text: "Nous avons r\xE9duit en circuit les Ampouliens, ce ne sont pas des lumi\xE8res
+      HA HA HA !"
+    choices:
+    - name: "HA HA HA, c'est bien vrai \xE7a !"
+      nextDialogueID: fbbd5fe1-bfd8-46d1-b8de-74ff35d1a0d9
+    - name: ...
+      nextDialogueID: fbbd5fe1-bfd8-46d1-b8de-74ff35d1a0d9
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 1662, y: 129}
+    sound: {fileID: 0}
+  - id: fbbd5fe1-bfd8-46d1-b8de-74ff35d1a0d9
+    characterName: 'Guerrier '
+    text: "Nous aimerions maintenant nous attaquer aux Amp\xE8ratus CHEF ! "
+    choices:
+    - name: Oui ! Montrons leurs qui sont les robots dominant !
+      nextDialogueID: 8eefba93-29c5-430e-ac9b-129c393301fb
+    - name: "Hum... en \xEAtes vous certains ? "
+      nextDialogueID: a26b1efc-ec73-4c60-97b7-ce488a47dcb5
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 2258, y: 132}
+    sound: {fileID: 0}
+  - id: 8eefba93-29c5-430e-ac9b-129c393301fb
+    characterName: 'Guerrier '
+    text: 'BIEN DIT CA CHEF ! VOUS N''AVEZ CAS APPUYER SUR LA GROS BOUTON LA BAS
+      ! '
+    choices:
+    - name: Next
+      nextDialogueID: 
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 2722, y: 0}
+    sound: {fileID: 0}
+  - id: a26b1efc-ec73-4c60-97b7-ce488a47dcb5
+    characterName: 'Guerrier '
+    text: "\rMAIS OUI ! NOUS ALLONS LEUR MONTRER ! VOUS N'AVEZ CAS APPUYER SUR LE
+      BOUTON LA BAS ET NOUS SERONT SUR EUX !"
+    choices:
+    - name: Next
+      nextDialogueID: 
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 2727, y: 277}
+    sound: {fileID: 0}
+  firstNode:
+    id: 7628f66a-1220-4a74-af6d-2d51f34f1850
+    characterName: 'Guerrier '
+    text: BONJOUR CHEF ! CONTENT DE VOUS VOIR CHEF ! COMMENT ALLEZ VOUS CHEF ?
+    choices:
+    - name: "Repos Soldat ! Je vais tr\xE8s bien je vous remercie."
+      nextDialogueID: eabacd05-ef67-4b1c-821a-df5faa9202eb
+    - name: 'Wow wow wow, pouvez vous parler moins fort ? '
+      nextDialogueID: eabacd05-ef67-4b1c-821a-df5faa9202eb
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 245, y: 115}
+    sound: {fileID: 0}

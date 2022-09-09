@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c45406c869b3d294faf4ca9faac25539, type: 3}
+  m_Name: D_Ecolo
+  m_EditorClassIdentifier: 
+  nodes:
+  - id: 72e1a061-d335-4ed4-8ca0-7159898e4da5
+    characterName: Character
+    text: "Ah justement ! Il est bient\xF4t pr\xEAt ! Vous pouvez constater sont
+      avanc\xE9e en tournant le bouton reli\xE9 \xE0 ma commande de contr\xF4le.
+      (Commande de contr\xF4le toute neuve d'ailleurs ! La fameuse F5POl, totalement
+      \xE9tanche). "
+    choices:
+    - name: Next
+      nextDialogueID: 6a7efc84-a9a1-4c3f-8596-a99c12e7029c
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 261.45004, y: 131.50002}
+    sound: {fileID: 0}
+  - id: 6a7efc84-a9a1-4c3f-8596-a99c12e7029c
+    characterName: Character
+    text: "Ja...ja...ja...j'avais justement fi...fi...fi...finis les plans pour la
+      nou...nou...nou...nouvelle plan\xE8te. "
+    choices:
+    - name: Ne panique pas tout va bien ce passe, montre moi !
+      nextDialogueID: 1a8342cf-e9fd-4439-a783-6213b9d31102
+    - name: "Bon d'accord mais il va falloir acc\xE9l\xE9rer la cadence. "
+      nextDialogueID: 33057ecf-63b7-4605-8f4f-e3b60e1efdcb
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 913.9501, y: 133.6}
+    sound: {fileID: 0}
+  - id: 1a8342cf-e9fd-4439-a783-6213b9d31102
+    characterName: Character
+    text: Da...da...da...d'accord, je vais faire de mon mieux
+    choices:
+    - name: Next
+      nextDialogueID: b7a2c18e-5452-4e77-8135-3d192eefad7a
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 1541.74, y: 11.07251}
+    sound: {fileID: 0}
+  - id: 33057ecf-63b7-4605-8f4f-e3b60e1efdcb
+    characterName: Character
+    text: Da...da...da...d'accord, pa...pa...pardon
+    choices:
+    - name: Next
+      nextDialogueID: b7a2c18e-5452-4e77-8135-3d192eefad7a
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 1540.065, y: 305.485}
+    sound: {fileID: 0}
+  - id: b7a2c18e-5452-4e77-8135-3d192eefad7a
+    characterName: Character
+    text: 'Du...du...du du coup on pen...pen...pense mettre en place un tout nouveaux
+      champ de pa...pa...paneaux solaire. '
+    choices:
+    - name: Next
+      nextDialogueID: 23cb29fd-8ac5-4eec-beeb-40435c2258c8
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 2028.975, y: 177.55002}
+    sound: {fileID: 0}
+  - id: 23cb29fd-8ac5-4eec-beeb-40435c2258c8
+    characterName: Character
+    text: "Com...com...combin\xE9 avec un syst\xE8me hy...hy...hydrau\xE9lectrique
+      nous pou...pou...pourrions \xEAtre compl\xE8tement ind\xE9pendant concernant
+      l'energie \xE9...\xE9...\xE9lectrique.  "
+    choices:
+    - name: Next
+      nextDialogueID: 52cc0a93-816e-43f2-8a5f-e4a70c259a53
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 2615.875, y: 176.93498}
+    sound: {fileID: 0}
+  - id: 52cc0a93-816e-43f2-8a5f-e4a70c259a53
+    characterName: Character
+    text: "En plus, ce...ce...ce...cela permettrais d'avoir une \xE9nergie propre
+      est respectueuse des autres \xE9...\xE9...\xE9...\xE9sp\xE8ce.  "
+    choices:
+    - name: "Hum ok ok tr\xE8s bien cela me semble int\xE9ressant ! "
+      nextDialogueID: c1a515d6-7b00-4936-8f04-7a254ec16660
+    - name: "Mouais, cela ne m'a pas l'air tr\xE8s utile pour notre futur. "
+      nextDialogueID: 3d81a50b-b75e-4eba-bbf6-7cbdd232f72a
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 3222.7104, y: 175.67749}
+    sound: {fileID: 0}
+  - id: c1a515d6-7b00-4936-8f04-7a254ec16660
+    characterName: Character
+    text: "AH ?! Enfin je...je...je veux di...di...dire tr\xE8s bien ! Vous...vous...vous
+      pou...pou...pouvez mettre en pla...pla...place les panneaux so...so...solaire
+      en utilisant le bouton l\xE0-bas. "
+    choices:
+    - name: Next
+      nextDialogueID: 
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 3883.3552, y: 12.000001}
+    sound: {fileID: 0}
+  - id: 3d81a50b-b75e-4eba-bbf6-7cbdd232f72a
+    characterName: Character
+    text: 'Da...da...d''accord, je...je...je vais le re...retravailler.  '
+    choices:
+    - name: Next
+      nextDialogueID: e7e23ecd-8bdf-4d6b-ba15-8d9b1e55a25c
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 3878.91, y: 313.48996}
+    sound: {fileID: 0}
+  - id: e7e23ecd-8bdf-4d6b-ba15-8d9b1e55a25c
+    characterName: Character
+    text: "Si...si...si jamais vous...vous changez d'avis, le bou...bou...bouton
+      est juste l\xE0."
+    choices:
+    - name: Next
+      nextDialogueID: 
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 4309.0327, y: 317.87003}
+    sound: {fileID: 0}
+  firstNode:
+    id: 72e1a061-d335-4ed4-8ca0-7159898e4da5
+    characterName: Character
+    text: "Ah justement ! Il est bient\xF4t pr\xEAt ! Vous pouvez constater sont
+      avanc\xE9e en tournant le bouton reli\xE9 \xE0 ma commande de contr\xF4le.
+      (Commande de contr\xF4le toute neuve d'ailleurs ! La fameuse F5POl, totalement
+      \xE9tanche). "
+    choices:
+    - name: Next
+      nextDialogueID: 6a7efc84-a9a1-4c3f-8596-a99c12e7029c
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 261.45004, y: 131.50002}
+    sound: {fileID: 0}
