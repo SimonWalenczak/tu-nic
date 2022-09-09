@@ -12,6 +12,7 @@ namespace Tunic
 		[SerializeField] Politician polititian;
 
 		public static bool first = true;
+		public static Politician.Role? lastQuestion=null;
 
 		Planet planet;
 		
@@ -54,6 +55,7 @@ namespace Tunic
 			if (polititian.role == Politician.Role.Conservatism)
 				planet.cursors[3].score += score;
 
+			lastQuestion = polititian.role;
 			StartCoroutine(planet.ApplyCursors());
 
 			first = false;
@@ -61,7 +63,8 @@ namespace Tunic
 
         private void OnApplicationQuit()
         {
-			first = true;
+	        first = true;
+	        lastQuestion=null;
         }
     }
 }

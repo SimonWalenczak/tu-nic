@@ -43,7 +43,8 @@ namespace Tunic
 		{
 			Debug.Log($"Start Talking to {selectable}");
 			if (!(selectable is Politician politician)) return;
-			var dialogue = GameObject.FindObjectOfType<DialogueManager>();
+			var dialogue = GameObject.FindObjectOfType<DialogueManager>(true);
+			Debug.Log(politician.Container	);
 			dialogue.SetDialog(politician.Container); 
 			UnSelect(selectable);
 		}

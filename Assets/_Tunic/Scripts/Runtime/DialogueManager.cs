@@ -12,7 +12,7 @@ namespace Tunic
 	    
         private void OnEnable()
 	    {
-		    gameObject.SetActive(true);
+		    // gameObject.SetActive(true);
             canvas.FadeIn();
             OnStart?.Invoke();
             OnStart = null;
@@ -20,7 +20,7 @@ namespace Tunic
 
         private void OnDisable()
         {
-	        canvas.FadeOut().onComplete+=()=>gameObject.SetActive(false	);
+	        canvas.FadeOut();//.onComplete+=()=>gameObject.SetActive(false	);
             OnComplete?.Invoke();
             OnComplete = null;
         }

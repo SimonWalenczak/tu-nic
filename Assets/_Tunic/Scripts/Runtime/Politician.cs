@@ -4,10 +4,27 @@ namespace Tunic
 {
     public class Politician : MonoBehaviour, ISelectable
     {
-        public DS.Engine.DSContainerSO Container => container;
-        public Grabbable Hat => hat;
+        
+	    public DS.Engine.DSContainerSO Container {
+	    	get {
+	    		Debug.Log(WorldButton.lastQuestion);
+	    		switch (WorldButton.lastQuestion)
+	    		{
+	    		case Role.Conservatism:return containerConservatism;
+	    		case Role.Progressism:return containerProgressism;
+	    		case Role.War:return containerWar;
+	    		case Role.Ecology:return containerEcology;
+	    		default:return container;
+	    		}
+	    	}
+	    }
+	    public Grabbable Hat => hat;
 
-        [SerializeField] DS.Engine.DSContainerSO container;
+	    [SerializeField] DS.Engine.DSContainerSO container;
+	    [SerializeField] DS.Engine.DSContainerSO containerConservatism;
+	    [SerializeField] DS.Engine.DSContainerSO containerProgressism;
+	    [SerializeField] DS.Engine.DSContainerSO containerWar;
+	    [SerializeField] DS.Engine.DSContainerSO containerEcology;
         [SerializeField, Etienne.ReadOnly] Grabbable hat;
         [SerializeField] GameObject button;
         [SerializeField] Transform hatParent;
