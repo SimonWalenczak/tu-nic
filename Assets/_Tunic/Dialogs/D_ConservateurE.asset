@@ -18,9 +18,9 @@ MonoBehaviour:
     text: "Bonjour monseigneur, un \xE9clat divin m'est parvenu du grand olivier
       ce matin et je viens vous transmettre sa sainte parole."
     choices:
-    - name: Next
+    - name: 'suivant '
       nextDialogueID: 7000521d-8b08-4142-96b2-91664f5a4a99
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 473da6b0a0df77b4c92adfb1647cb088, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 217.37022, y: 149.22714}
     sound: {fileID: 0}
@@ -46,7 +46,7 @@ MonoBehaviour:
       nextDialogueID: e2c48037-6974-47f6-a4a9-6c723a5eb41e
     - name: "Oui , tu resteras grav\xE9 dans ma ram."
       nextDialogueID: 506de66c-926d-4044-bfdd-e593837fae95
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 805369a9aba675a44ab14d2536bc3cc3, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 1559.5503, y: -7.5500083}
     sound: {fileID: 0}
@@ -55,9 +55,9 @@ MonoBehaviour:
     text: "Vous avez tout compris jeune sage. \r\nAllez vers le chemin du destin
       qui m\xE8ne \xE0 mon bouton."
     choices:
-    - name: Next
+    - name: 'suivant '
       nextDialogueID: 
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 805369a9aba675a44ab14d2536bc3cc3, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 1558.8003, y: 276.30002}
     sound: {fileID: 0}
@@ -65,7 +65,7 @@ MonoBehaviour:
     characterName: Character
     text: Cela me touche mon ami, dirigez vous vers le chemin que vous souhaitez
     choices:
-    - name: Next
+    - name: quitter
       nextDialogueID: 
     characterSprite: {fileID: 0}
     backgroundSprite: {fileID: 0}
@@ -75,9 +75,9 @@ MonoBehaviour:
     characterName: Character
     text: "Oh tr\xE8s bien je vois *pleure*"
     choices:
-    - name: Next
+    - name: quitter
       nextDialogueID: 
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 19e92bdad1c993c44a77c202f4c5cfa2, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 2018.1501, y: -12.850014}
     sound: {fileID: 0}
@@ -87,9 +87,9 @@ MonoBehaviour:
     text: "Bonjour monseigneur, un \xE9clat divin m'est parvenu du grand olivier
       ce matin et je viens vous transmettre sa sainte parole."
     choices:
-    - name: Next
+    - name: 'suivant '
       nextDialogueID: 7000521d-8b08-4142-96b2-91664f5a4a99
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 473da6b0a0df77b4c92adfb1647cb088, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 217.37022, y: 149.22714}
     sound: {fileID: 0}

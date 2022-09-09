@@ -24,18 +24,18 @@ MonoBehaviour:
       nextDialogueID: 1993c8ed-7123-4934-a20a-d22696c1c859
     - name: "Vous avez fait quoi \xE0 la couverture ?!"
       nextDialogueID: 65a9c705-0a9b-4891-ae98-cb5b49497a31
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
-    position: {x: 252, y: 26}
+    position: {x: 253.15, y: 26.000013}
     sound: {fileID: 0}
   - id: 1993c8ed-7123-4934-a20a-d22696c1c859
     characterName: Character
     text: "De mon point de vue la base fonctionne tr\xE8s bien, cependant quelques
       am\xE9liorations ne serait pas de trop. "
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 712010ca-be20-4332-b3ce-3b7b00c0b403
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 880, y: -86}
     sound: {fileID: 0}
@@ -44,9 +44,9 @@ MonoBehaviour:
     text: "Ce n'est trois fois rien, cela ne m'a pas pris longtemps ! D'ailleurs
       je pense aussi \xE0 apporter quelques am\xE9liorations suppl\xE9mentaire. "
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 712010ca-be20-4332-b3ce-3b7b00c0b403
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 884, y: 188}
     sound: {fileID: 0}
@@ -60,7 +60,7 @@ MonoBehaviour:
       nextDialogueID: fe3ea6b7-c5e3-4673-9ed6-b3dda68b3291
     - name: Cela ma semble tout t'a fait recevable !
       nextDialogueID: fe3ea6b7-c5e3-4673-9ed6-b3dda68b3291
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 1506, y: 66}
     sound: {fileID: 0}
@@ -68,9 +68,9 @@ MonoBehaviour:
     characterName: Character
     text: "Mais oui mais oui ! Dans tout les cas le bouton est juste l\xE0."
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 2094.4524, y: 77.0325}
     sound: {fileID: 0}
@@ -86,7 +86,7 @@ MonoBehaviour:
       nextDialogueID: 1993c8ed-7123-4934-a20a-d22696c1c859
     - name: "Vous avez fait quoi \xE0 la couverture ?!"
       nextDialogueID: 65a9c705-0a9b-4891-ae98-cb5b49497a31
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
-    position: {x: 252, y: 26}
+    position: {x: 253.15, y: 26.000013}
     sound: {fileID: 0}

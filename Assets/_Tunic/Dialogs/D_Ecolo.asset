@@ -13,19 +13,6 @@ MonoBehaviour:
   m_Name: D_Ecolo
   m_EditorClassIdentifier: 
   nodes:
-  - id: 72e1a061-d335-4ed4-8ca0-7159898e4da5
-    characterName: Character
-    text: "Ah justement ! Il est bient\xF4t pr\xEAt ! Vous pouvez constater sont
-      avanc\xE9e en tournant le bouton reli\xE9 \xE0 ma commande de contr\xF4le.
-      (Commande de contr\xF4le toute neuve d'ailleurs ! La fameuse F5POl, totalement
-      \xE9tanche). "
-    choices:
-    - name: Next
-      nextDialogueID: 6a7efc84-a9a1-4c3f-8596-a99c12e7029c
-    characterSprite: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    position: {x: 261.45004, y: 131.50002}
-    sound: {fileID: 0}
   - id: 6a7efc84-a9a1-4c3f-8596-a99c12e7029c
     characterName: Character
     text: "Ja...ja...ja...j'avais justement fi...fi...fi...finis les plans pour la
@@ -35,7 +22,7 @@ MonoBehaviour:
       nextDialogueID: 1a8342cf-e9fd-4439-a783-6213b9d31102
     - name: "Bon d'accord mais il va falloir acc\xE9l\xE9rer la cadence. "
       nextDialogueID: 33057ecf-63b7-4605-8f4f-e3b60e1efdcb
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 19e92bdad1c993c44a77c202f4c5cfa2, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 913.9501, y: 133.6}
     sound: {fileID: 0}
@@ -43,9 +30,9 @@ MonoBehaviour:
     characterName: Character
     text: Da...da...da...d'accord, je vais faire de mon mieux
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: b7a2c18e-5452-4e77-8135-3d192eefad7a
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 1541.74, y: 11.07251}
     sound: {fileID: 0}
@@ -53,9 +40,9 @@ MonoBehaviour:
     characterName: Character
     text: Da...da...da...d'accord, pa...pa...pardon
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: b7a2c18e-5452-4e77-8135-3d192eefad7a
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 1540.065, y: 305.485}
     sound: {fileID: 0}
@@ -64,9 +51,9 @@ MonoBehaviour:
     text: 'Du...du...du du coup on pen...pen...pense mettre en place un tout nouveaux
       champ de pa...pa...paneaux solaire. '
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 23cb29fd-8ac5-4eec-beeb-40435c2258c8
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 2028.975, y: 177.55002}
     sound: {fileID: 0}
@@ -76,9 +63,9 @@ MonoBehaviour:
       nous pou...pou...pourrions \xEAtre compl\xE8tement ind\xE9pendant concernant
       l'energie \xE9...\xE9...\xE9lectrique.  "
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 52cc0a93-816e-43f2-8a5f-e4a70c259a53
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 2615.875, y: 176.93498}
     sound: {fileID: 0}
@@ -91,7 +78,7 @@ MonoBehaviour:
       nextDialogueID: c1a515d6-7b00-4936-8f04-7a254ec16660
     - name: "Mouais, cela ne m'a pas l'air tr\xE8s utile pour notre futur. "
       nextDialogueID: 3d81a50b-b75e-4eba-bbf6-7cbdd232f72a
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 805369a9aba675a44ab14d2536bc3cc3, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 3222.7104, y: 175.67749}
     sound: {fileID: 0}
@@ -103,7 +90,7 @@ MonoBehaviour:
     choices:
     - name: Next
       nextDialogueID: 
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 3883.3552, y: 12.000001}
     sound: {fileID: 0}
@@ -111,9 +98,9 @@ MonoBehaviour:
     characterName: Character
     text: 'Da...da...d''accord, je...je...je vais le re...retravailler.  '
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: e7e23ecd-8bdf-4d6b-ba15-8d9b1e55a25c
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 3878.91, y: 313.48996}
     sound: {fileID: 0}
@@ -124,21 +111,30 @@ MonoBehaviour:
     choices:
     - name: Next
       nextDialogueID: 
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 805369a9aba675a44ab14d2536bc3cc3, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 4309.0327, y: 317.87003}
     sound: {fileID: 0}
-  firstNode:
-    id: 72e1a061-d335-4ed4-8ca0-7159898e4da5
+  - id: 62e99b33-4e5a-469d-8813-ff7b1e771aca
     characterName: Character
-    text: "Ah justement ! Il est bient\xF4t pr\xEAt ! Vous pouvez constater sont
-      avanc\xE9e en tournant le bouton reli\xE9 \xE0 ma commande de contr\xF4le.
-      (Commande de contr\xF4le toute neuve d'ailleurs ! La fameuse F5POl, totalement
-      \xE9tanche). "
+    text: "Euh...Bon...bon...bon...bonjour, je suis tr\xE8s...tr\xE8s...tr\xE8s content
+      de vous voir. "
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 6a7efc84-a9a1-4c3f-8596-a99c12e7029c
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
-    position: {x: 261.45004, y: 131.50002}
+    position: {x: 368, y: 134}
+    sound: {fileID: 0}
+  firstNode:
+    id: 62e99b33-4e5a-469d-8813-ff7b1e771aca
+    characterName: Character
+    text: "Euh...Bon...bon...bon...bonjour, je suis tr\xE8s...tr\xE8s...tr\xE8s content
+      de vous voir. "
+    choices:
+    - name: suivant
+      nextDialogueID: 6a7efc84-a9a1-4c3f-8596-a99c12e7029c
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
+    backgroundSprite: {fileID: 0}
+    position: {x: 368, y: 134}
     sound: {fileID: 0}

@@ -18,9 +18,9 @@ MonoBehaviour:
     text: Bon...bon...jour, j'ai ! Hee, j'ai aut...aut...tre cho...ose a vous proposez
       !
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 169defe5-27e4-4f22-8391-20033d52ed5c
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 805369a9aba675a44ab14d2536bc3cc3, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 201.35002, y: 80.25008}
     sound: {fileID: 0}
@@ -34,7 +34,7 @@ MonoBehaviour:
       nextDialogueID: 0c91fc95-b2c1-407a-836c-66346b622ae3
     - name: "Oui ce serait une bonne id\xE9e !"
       nextDialogueID: b4f5bd4c-cca9-4826-bb87-6f1821ac98d5
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 682.80005, y: 79.80002}
     sound: {fileID: 0}
@@ -42,9 +42,9 @@ MonoBehaviour:
     characterName: Character
     text: 'Mais ? Mais... Ch-ef, je... '
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 7bf2290f-57e0-4207-97e9-ad276ed908d0
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 19e92bdad1c993c44a77c202f4c5cfa2, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 1362.3003, y: -54.199947}
     sound: {fileID: 0}
@@ -54,7 +54,7 @@ MonoBehaviour:
     choices:
     - name: Next
       nextDialogueID: 
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 1711.4501, y: -66.29997}
     sound: {fileID: 0}
@@ -62,9 +62,9 @@ MonoBehaviour:
     characterName: Character
     text: Merci Chef ! Je vous serait re...redevable !
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 1340.9, y: 260.00006}
     sound: {fileID: 0}
@@ -74,9 +74,9 @@ MonoBehaviour:
     text: Bon...bon...jour, j'ai ! Hee, j'ai aut...aut...tre cho...ose a vous proposez
       !
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 169defe5-27e4-4f22-8391-20033d52ed5c
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 805369a9aba675a44ab14d2536bc3cc3, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 201.35002, y: 80.25008}
     sound: {fileID: 0}
