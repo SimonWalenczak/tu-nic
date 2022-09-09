@@ -9,14 +9,19 @@ namespace Tunic
 		protected ISelectable selectable;
 		protected void OnTriggerEnter(Collider other)
 		{
-			if (!other.transform.root.TryGetComponent<ISelectable>(out ISelectable selectable)) return;
+			Debug.Log	("Trigger select");
+			if (!other.TryGetComponent<ISelectable>(out ISelectable selectable)){
+				if (!other.transform.root.TryGetComponent<ISelectable>(out selectable)) return;
+			}
 			if (selectable!=this.selectable) this.selectable?.UnSelect();
 			Select(selectable);
 		}
 	    
 		protected void OnTriggerExit(Collider other)
 		{
-			if (!other.transform.root.TryGetComponent<ISelectable>(out ISelectable selectable)) return;
+			if (!other.TryGetComponent<ISelectable>(out ISelectable selectable)){
+				if (!other.transform.root.TryGetComponent<ISelectable>(out selectable)) return;
+			}
 			if (selectable!=this.selectable)return;
 			UnSelect(selectable);
 		}
