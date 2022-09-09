@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
@@ -36,7 +36,11 @@ namespace Tunic
         private Cursor[] cursors;
 
         [SerializeField]
-        private Transform water;
+	    private Transform water;
+        
+	    [SerializeField] bool isPreview;
+        
+	    public bool DEBUG;
 
         private void Start()
         {
@@ -97,9 +101,9 @@ namespace Tunic
 
             gradient.SetKeys(keys, gradient.alphaKeys);
 
-            CameraSwapper.Instance.ToPlanet();
+	        CameraSwapper.Instance?.ToPlanet();
 
-            yield return new WaitForSeconds(1f);
+	        if(!isPreview)  yield return new WaitForSeconds(1f);
 
             for (int i = 0; i < terrains.Length; ++i)
             {
@@ -107,9 +111,9 @@ namespace Tunic
                 StartCoroutine(terrains[i].GenerateProps(0.005f, props, Mathf.RoundToInt(seaLevel)));
             }
 
-            yield return new WaitForSeconds(3f);
+           if(!isPreview) yield return new WaitForSeconds(3f);
 
-            CameraSwapper.Instance.ToBase();
+	        CameraSwapper.Instance?.ToBase();
 
             water.localScale = seaLevel > 0 ? Vector3.one * (size + seaLevel + 0.1f) : Vector3.zero;
 
@@ -123,7 +127,7 @@ namespace Tunic
 
         private void OnValidate()
         {
-            StartCoroutine(ApplyCursors());
+        	if (DEBUG)StartCoroutine(ApplyCursors());
         }
     }
 }
