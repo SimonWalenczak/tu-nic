@@ -17,31 +17,31 @@ MonoBehaviour:
     characterName: Conservateur
     text: "\rOh bonjour monseigneur j'esp\xE8re que la paix est en votre carte m\xE8re. "
     choices:
-    - name: Next
+    - name: 'suivant '
       nextDialogueID: e8722a1a-f614-4718-bec9-361a91458e5f
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 473da6b0a0df77b4c92adfb1647cb088, type: 3}
     backgroundSprite: {fileID: 0}
-    position: {x: 7, y: 123}
+    position: {x: -21, y: 158}
     sound: {fileID: 0}
   - id: 053d153a-4469-48d3-afd8-ef2f5b69d645
     characterName: Conservateur
     text: "Nous pourrons les mettre en pratique d\xE8s que vous aurez appos\xE9 le
       saint sceau circulaire monseigneur !"
     choices:
-    - name: Next
+    - name: 'suivant '
       nextDialogueID: 
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 473da6b0a0df77b4c92adfb1647cb088, type: 3}
     backgroundSprite: {fileID: 0}
-    position: {x: 1710, y: -25}
+    position: {x: 1708.8502, y: -25.00002}
     sound: {fileID: 0}
   - id: e5224462-8f07-48b0-8d54-6e9db2c95686
     characterName: Conservateur
     text: "Oh...Je ne trouve pas ! Regardez, nous avons par exemple pr\xE9vu d'utiliser
       les circuits \xE9lectrique comme chandeliers !"
     choices:
-    - name: Next
+    - name: 'suivant '
       nextDialogueID: 6ec81533-5e8d-4273-8d6c-5f62825ed121
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 1740, y: 262}
     sound: {fileID: 0}
@@ -50,9 +50,9 @@ MonoBehaviour:
     text: "\rVous \xEAtes certains de ne pas donner le saint sceau circulaire \xE0
       notre \xC9glise ? "
     choices:
-    - name: Next
+    - name: 'suivant '
       nextDialogueID: 
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 19e92bdad1c993c44a77c202f4c5cfa2, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 2404, y: 262}
     sound: {fileID: 0}
@@ -61,9 +61,9 @@ MonoBehaviour:
     text: "Je reviens vers pour vous indiquer que la construction de notre  \xE9glise
       de la Sainte    Nanomachine Eclair\xE9e Seigneuriale \xE0 bien avanc\xE9e. "
     choices:
-    - name: Next
+    - name: 'suivant '
       nextDialogueID: 23991340-1101-4f8c-b39b-abf0f532f316
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 805369a9aba675a44ab14d2536bc3cc3, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 515, y: 123}
     sound: {fileID: 0}
@@ -76,7 +76,7 @@ MonoBehaviour:
       nextDialogueID: 053d153a-4469-48d3-afd8-ef2f5b69d645
     - name: "Vous \xEAtes certain que \xE7a ne fait pas un peu trop vieillot ? "
       nextDialogueID: e5224462-8f07-48b0-8d54-6e9db2c95686
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 1100, y: 124}
     sound: {fileID: 0}
@@ -85,9 +85,9 @@ MonoBehaviour:
     characterName: Conservateur
     text: "\rOh bonjour monseigneur j'esp\xE8re que la paix est en votre carte m\xE8re. "
     choices:
-    - name: Next
+    - name: 'suivant '
       nextDialogueID: e8722a1a-f614-4718-bec9-361a91458e5f
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 473da6b0a0df77b4c92adfb1647cb088, type: 3}
     backgroundSprite: {fileID: 0}
-    position: {x: 7, y: 123}
+    position: {x: -21, y: 158}
     sound: {fileID: 0}

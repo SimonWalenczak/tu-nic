@@ -18,11 +18,11 @@ MonoBehaviour:
     text: "Vous devez \xEAtre l\xE0 pour voir les nouveaux plans du nouveaux cin\xE9ma
       Kaleidoscopomatronique ? Regardez !"
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: bf910a84-6774-4e5f-bf76-6db1d824439b
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 805369a9aba675a44ab14d2536bc3cc3, type: 3}
     backgroundSprite: {fileID: 0}
-    position: {x: 220, y: 150}
+    position: {x: 216, y: 150}
     sound: {fileID: 0}
   - id: bf910a84-6774-4e5f-bf76-6db1d824439b
     characterName: Character
@@ -31,9 +31,9 @@ MonoBehaviour:
       Cependant nous avons eu quelques soucis avec le branchement des \xE9gouts sur
       l'ast\xE9ro\xEFde P1000."
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 179a69d1-9227-430a-bd59-c4469ab464cd
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 795, y: 151}
     sound: {fileID: 0}
@@ -41,19 +41,19 @@ MonoBehaviour:
     characterName: Character
     text: "On voulait le brancher sur l'ast\xE9ro\xEFde P5."
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 3f9049bc-dbc2-4769-afd5-0bbd3344e045
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
-    position: {x: 1391, y: 154}
+    position: {x: 1390, y: 154}
     sound: {fileID: 0}
   - id: 3f9049bc-dbc2-4769-afd5-0bbd3344e045
     characterName: Character
     text: "Mais c'\xE9tait moins complexe."
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 45aeb086-8d9f-4270-abd8-c2a49b410d76
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 1781, y: 154}
     sound: {fileID: 0}
@@ -64,9 +64,9 @@ MonoBehaviour:
       pas aux normes de la convention salariale des OPX8 (Alors que les OPX7 n'ont
       pos\xE9s aucuns probl\xE8mes)"
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 4d007c3c-3eef-41c6-82d8-1aef9f226064
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 2165, y: 155}
     sound: {fileID: 0}
@@ -79,9 +79,9 @@ MonoBehaviour:
       nextDialogueID: e203254f-2dfe-4f74-8fbb-1db30dd77860
     - name: Vous pouvez me laisser en placer une ?
       nextDialogueID: e203254f-2dfe-4f74-8fbb-1db30dd77860
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
-    position: {x: 2772, y: 154}
+    position: {x: 2772, y: 155}
     sound: {fileID: 0}
   - id: e203254f-2dfe-4f74-8fbb-1db30dd77860
     characterName: Character
@@ -94,7 +94,7 @@ MonoBehaviour:
       nextDialogueID: e6914b8a-cb60-45d1-b214-8dc05c613e85
     - name: JE DISAIS DONC !
       nextDialogueID: 599efa59-865f-4903-a6e3-f3b106129157
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 3329, y: 162}
     sound: {fileID: 0}
@@ -108,7 +108,7 @@ MonoBehaviour:
     - name: "Ou en \xEAtes vous sur l'application du g\xE9n\xE9rateur thermoelctro
         ?"
       nextDialogueID: 331da5b8-8aab-44de-a38b-9d1de63db14f
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 3966, y: 346}
     sound: {fileID: 0}
@@ -118,9 +118,9 @@ MonoBehaviour:
       en 2024 tout de m\xEAme ! (Autant la 2068 pourquoi pas, mais la 2024 non non
       non, \xE0 la limite la 267 je veux bien)"
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: fdde6f84-aa19-4692-aea0-aae2bb0a62b4
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 4595.9, y: -15.850017}
     sound: {fileID: 0}
@@ -130,9 +130,9 @@ MonoBehaviour:
       ! D'ailleurs si vous voulez avoir un aper\xE7us ils suffit de tourner le bouton
       ici !"
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 5203.7, y: -16.749998}
     sound: {fileID: 0}
@@ -143,9 +143,9 @@ MonoBehaviour:
       (Commande de contr\xF4le toute neuve d'ailleurs ! La fameuse F5POl, totalement
       \xE9tanche). "
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 4668, y: 430}
     sound: {fileID: 0}
@@ -155,9 +155,9 @@ MonoBehaviour:
     text: "Vous devez \xEAtre l\xE0 pour voir les nouveaux plans du nouveaux cin\xE9ma
       Kaleidoscopomatronique ? Regardez !"
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: bf910a84-6774-4e5f-bf76-6db1d824439b
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 805369a9aba675a44ab14d2536bc3cc3, type: 3}
     backgroundSprite: {fileID: 0}
-    position: {x: 220, y: 150}
+    position: {x: 216, y: 150}
     sound: {fileID: 0}
