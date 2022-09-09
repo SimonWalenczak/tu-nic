@@ -16,6 +16,7 @@ namespace Tunic
         Renderer buttonRenderer;
         Color cubeColor;
 
+        Animator animator;
         public enum Role
         {
             Conservatism,
@@ -31,6 +32,8 @@ namespace Tunic
             fadeable = GetComponentInChildren<Fadeable>();
             buttonRenderer = button.GetComponent<Renderer>();
             cubeColor = buttonRenderer.material.color;
+
+            animator = GetComponentInChildren<Animator>();
         }
 
         void ISelectable.Select()
@@ -51,6 +54,9 @@ namespace Tunic
             }
 
             this.hat = hat;
+
+            animator.SetTrigger("haveHat");
+            
             hat.SetAsHat(hatParent);
             buttonRenderer.material.color = hat.refColor;
         }
