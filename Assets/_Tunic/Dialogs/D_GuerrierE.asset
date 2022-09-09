@@ -17,9 +17,9 @@ MonoBehaviour:
     characterName: Character
     text: "Alors CHEF ! Etes-vous content du progr\xE8s de la plan\xE8te CHEF ?! "
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: c74e065e-1b76-4a32-8661-9a25b0093f1f
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 230.60002, y: 152.04999}
     sound: {fileID: 0}
@@ -31,7 +31,7 @@ MonoBehaviour:
       nextDialogueID: 78617f95-c3a0-440b-b090-efcd0b50e134
     - name: 'Un peu trop de vert ? '
       nextDialogueID: 6992ac11-aacc-44fe-b45d-123f9a351473
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 769.3501, y: 151.84999}
     sound: {fileID: 0}
@@ -40,9 +40,9 @@ MonoBehaviour:
     text: "Je pense qu'on pourrait mettre en place un syst\xE8me d'armement CHEF
       ! "
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 229a0956-62dd-4f4c-9766-3be2564fb04c
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 805369a9aba675a44ab14d2536bc3cc3, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 1247.7501, y: 3.0999923}
     sound: {fileID: 0}
@@ -50,9 +50,9 @@ MonoBehaviour:
     characterName: Character
     text: Oui CHEF ! Je trouve que l'on manque de puissance de FEU !
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 229a0956-62dd-4f4c-9766-3be2564fb04c
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 1250.9003, y: 257.65}
     sound: {fileID: 0}
@@ -65,7 +65,7 @@ MonoBehaviour:
       nextDialogueID: f18ed140-c2bc-4f1e-84e0-694f1fb68db3
     - name: Je suis bien d'accord SOLDAT ! Je signe ou ?
       nextDialogueID: a8a1fd4f-4b3e-460b-ba20-383cea32fae9
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 805369a9aba675a44ab14d2536bc3cc3, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 1819.8003, y: 151.50006}
     sound: {fileID: 0}
@@ -73,9 +73,9 @@ MonoBehaviour:
     characterName: Character
     text: "J'esp\xE8re que vous me choisirez CHEF !"
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 473da6b0a0df77b4c92adfb1647cb088, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 2404.5505, y: -1.1000226}
     sound: {fileID: 0}
@@ -83,9 +83,9 @@ MonoBehaviour:
     characterName: Character
     text: "Le bouton est juste l\xE0 CHEF !"
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 473da6b0a0df77b4c92adfb1647cb088, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 2412.6504, y: 282.95}
     sound: {fileID: 0}
@@ -94,9 +94,9 @@ MonoBehaviour:
     characterName: Character
     text: "Alors CHEF ! Etes-vous content du progr\xE8s de la plan\xE8te CHEF ?! "
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: c74e065e-1b76-4a32-8661-9a25b0093f1f
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 230.60002, y: 152.04999}
     sound: {fileID: 0}

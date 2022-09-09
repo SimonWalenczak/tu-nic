@@ -19,9 +19,9 @@ MonoBehaviour:
       cet plan\xE8te, elle parait plus verte , qu'elle est jolie mais il manque encore
       du progr\xE8s !"
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: ccd191ba-6ad6-40ec-af7e-0065e1b0be1a
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 237.05005, y: 151.25}
     sound: {fileID: 0}
@@ -39,9 +39,9 @@ MonoBehaviour:
       nextDialogueID: 37d04cfb-4413-408b-b821-f3d9f7fe59c9
     - name: "Heee... Oui c'est une bonne id\xE9e !"
       nextDialogueID: 2a5e028d-ed1e-448c-991f-e4fd5ae979fa
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
-    position: {x: 871.70013, y: 137.35002}
+    position: {x: 873, y: 137}
     sound: {fileID: 0}
   - id: 37d04cfb-4413-408b-b821-f3d9f7fe59c9
     characterName: Character
@@ -52,7 +52,7 @@ MonoBehaviour:
       nextDialogueID: 2a5e028d-ed1e-448c-991f-e4fd5ae979fa
     - name: Ah ouais je vois ok.
       nextDialogueID: 2a5e028d-ed1e-448c-991f-e4fd5ae979fa
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 1480.65, y: -27.000004}
     sound: {fileID: 0}
@@ -62,9 +62,9 @@ MonoBehaviour:
       Je vous conseille donc d'appuyer sur mon bouton pour voir la puissance des
       plantes alli\xE9es aux machines. "
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 2204.75, y: 225.70003}
     sound: {fileID: 0}
@@ -75,9 +75,9 @@ MonoBehaviour:
       cet plan\xE8te, elle parait plus verte , qu'elle est jolie mais il manque encore
       du progr\xE8s !"
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: ccd191ba-6ad6-40ec-af7e-0065e1b0be1a
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 237.05005, y: 151.25}
     sound: {fileID: 0}
