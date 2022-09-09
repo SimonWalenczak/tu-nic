@@ -9,6 +9,7 @@ namespace Tunic
     public class MainMenu : MonoBehaviour
     {
 	    [SerializeField]Button playbutton,tutoButton,quitButton;
+	    [SerializeField] TutoMenu tuto;
 	    
 	    // Awake is called when the script instance is being loaded.
 	    protected void Awake()
@@ -18,6 +19,11 @@ namespace Tunic
 	    	quitButton.onClick.AddListener(Quit);
 	    }
 	    
+	    protected void Start()
+	    {
+		    tuto	.gameObject.SetActive(false);
+	    }
+	    
 	    void Play(){
 	    	Debug.Log	("Play");
 	    	SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -25,6 +31,8 @@ namespace Tunic
 	    
 	    void Tuto(){
 	    	Debug.Log	("Tuto");
+	    	tuto	.gameObject.SetActive(true);
+	    	playbutton.transform.parent.gameObject.SetActive(false);
 	    }
 	    
 	    void Quit(){

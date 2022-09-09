@@ -18,9 +18,9 @@ MonoBehaviour:
     text: "BONJOUR ! Alors, alors ? L'avanc\xE9 de notre plan\xE8te \xE9volue, MAIS
       ELLE DOIT ENCORE EVOLUER  ! "
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: e2d87256-dec3-4d66-ac26-dd61d9660d89
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 264.05, y: 52.750053}
     sound: {fileID: 0}
@@ -35,7 +35,7 @@ MonoBehaviour:
     - name: "Actuellement , c'est ta carte m\xE8re qui est en surchauffe mais je
         suis pas contre."
       nextDialogueID: be401a6b-a218-488c-b423-08441b125fb1
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 913.00006, y: 53.399998}
     sound: {fileID: 0}
@@ -44,9 +44,9 @@ MonoBehaviour:
     text: 'MAIS NON MAIS NON. il suffit pour cela de respecter les normes B36 et
       G89 qui induisent la protection des disjoncteurs par les module ZS8.  '
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: e51e0d84-1f48-421a-b208-a77e20dd0f4e
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 1543.4001, y: 60.299995}
     sound: {fileID: 0}
@@ -54,9 +54,9 @@ MonoBehaviour:
     characterName: Character
     text: MAIS POUR QUE TOUT CELA FONCTIONNE IL FAUT APPUYER SUR MON BOUTON !
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 2172.8, y: 57.64999}
     sound: {fileID: 0}
@@ -66,9 +66,9 @@ MonoBehaviour:
     text: "BONJOUR ! Alors, alors ? L'avanc\xE9 de notre plan\xE8te \xE9volue, MAIS
       ELLE DOIT ENCORE EVOLUER  ! "
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: e2d87256-dec3-4d66-ac26-dd61d9660d89
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 264.05, y: 52.750053}
     sound: {fileID: 0}

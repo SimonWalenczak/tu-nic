@@ -17,9 +17,9 @@ MonoBehaviour:
     characterName: Character
     text: "Que le progr\xE8s soit avec vous monseigneur ! "
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: f02caac2-ce80-4126-aa9d-513ff6b80bdd
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 473da6b0a0df77b4c92adfb1647cb088, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 129.46, y: 143.15752}
     sound: {fileID: 0}
@@ -28,9 +28,9 @@ MonoBehaviour:
     text: "J'ai relu les quelques textes et que vous avez adopt\xE9 avec beaucoup
       de bont\xE9 et j'aimerais vous proposer quelques changements. "
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: 59014e4d-65b1-4dba-bb42-ca66cf201933
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 805369a9aba675a44ab14d2536bc3cc3, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 520.13, y: 149.51498}
     sound: {fileID: 0}
@@ -44,7 +44,7 @@ MonoBehaviour:
       nextDialogueID: f9c44ab1-a128-48dc-adb7-d7cea08557ca
     - name: "C'est une tr\xE8s bonne id\xE9e, que puis-je faire pour cela ?"
       nextDialogueID: 49d1fdc9-aa09-4c24-8866-4758fc2ca574
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 1156.355, y: 151.67754}
     sound: {fileID: 0}
@@ -54,9 +54,9 @@ MonoBehaviour:
       le dit si bien la grande carte m\xE8re \"Sur le bouton tu appuiera, et futur
       tu d\xE9couvrira !\""
     choices:
-    - name: Next
+    - name: quitter
       nextDialogueID: 
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: fe9fe5c3f7630204a8e97de8fcb1dc3d, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 1812.3552, y: 37.677498}
     sound: {fileID: 0}
@@ -65,9 +65,9 @@ MonoBehaviour:
     text: "Comme le dit le dixi\xE8me commandement de la sainte console \"Tu appuiera
       sur mon bouton avec bienveillance\"."
     choices:
-    - name: Next
+    - name: quitter
       nextDialogueID: 
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 805369a9aba675a44ab14d2536bc3cc3, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 1820.3551, y: 300.67752}
     sound: {fileID: 0}
@@ -76,9 +76,9 @@ MonoBehaviour:
     characterName: Character
     text: "Que le progr\xE8s soit avec vous monseigneur ! "
     choices:
-    - name: Next
+    - name: suivant
       nextDialogueID: f02caac2-ce80-4126-aa9d-513ff6b80bdd
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 473da6b0a0df77b4c92adfb1647cb088, type: 3}
     backgroundSprite: {fileID: 0}
     position: {x: 129.46, y: 143.15752}
     sound: {fileID: 0}
