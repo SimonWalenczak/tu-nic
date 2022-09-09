@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c45406c869b3d294faf4ca9faac25539, type: 3}
+  m_Name: D_ProgressisteE
+  m_EditorClassIdentifier: 
+  nodes:
+  - id: 0bd41026-985f-4206-869b-0027c3de2203
+    characterName: Character
+    text: "Alors ? Le progr\xE8s avance par ici ? Heee non la bas la bas oui sur
+      cet plan\xE8te, elle parait plus verte , qu'elle est jolie mais il manque encore
+      du progr\xE8s !"
+    choices:
+    - name: Next
+      nextDialogueID: ccd191ba-6ad6-40ec-af7e-0065e1b0be1a
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 237.05005, y: 151.25}
+    sound: {fileID: 0}
+  - id: ccd191ba-6ad6-40ec-af7e-0065e1b0be1a
+    characterName: Character
+    text: "Il manque des habitations , pour \xE9viter la pollution je d\xE9ciderais
+      de les instaurer dans des endroits o\xF9 se trouvent de la v\xE9g\xE9tation
+      qui l'absorbent. Vous trouverez votre bonheur avec le forsythia3000, le weig\xE9liaX58,
+      le groseillier \xE0 fleurs \xE0 r\xE9action, le Deutzia889, la cytiseZER, le
+      lilasFD6, le cor\xEAte du Japon (le mod\xE8le 520X), le gen\xEAt89, le tamarisX2000,
+      la spir\xE9eVW, le baguenaudier698 (Provenant d'une souche \xE9lectrotechnique
+      du Colutea arborescens ), l'alth\xE9a45, , l'ab\xE9lia FL8, le millepertuis75..."
+    choices:
+    - name: "Attendez attendez...Etes-vous \xE9cologiste ?"
+      nextDialogueID: 37d04cfb-4413-408b-b821-f3d9f7fe59c9
+    - name: "Heee... Oui c'est une bonne id\xE9e !"
+      nextDialogueID: 2a5e028d-ed1e-448c-991f-e4fd5ae979fa
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 871.70013, y: 137.35002}
+    sound: {fileID: 0}
+  - id: 37d04cfb-4413-408b-b821-f3d9f7fe59c9
+    characterName: Character
+    text: "Ecolotechniciens ! Je pourrais vous parler des heures de toutes les avanc\xE9es
+      que les plantes ont amen\xE9es ! "
+    choices:
+    - name: Je sais , je sais...
+      nextDialogueID: 2a5e028d-ed1e-448c-991f-e4fd5ae979fa
+    - name: Ah ouais je vois ok.
+      nextDialogueID: 2a5e028d-ed1e-448c-991f-e4fd5ae979fa
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 1480.65, y: -27.000004}
+    sound: {fileID: 0}
+  - id: 2a5e028d-ed1e-448c-991f-e4fd5ae979fa
+    characterName: Character
+    text: "Mais comme j'aime bien le dire, la science ce mesure en r\xE9sultat !
+      Je vous conseille donc d'appuyer sur mon bouton pour voir la puissance des
+      plantes alli\xE9es aux machines. "
+    choices:
+    - name: Next
+      nextDialogueID: 
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 2204.75, y: 225.70003}
+    sound: {fileID: 0}
+  firstNode:
+    id: 0bd41026-985f-4206-869b-0027c3de2203
+    characterName: Character
+    text: "Alors ? Le progr\xE8s avance par ici ? Heee non la bas la bas oui sur
+      cet plan\xE8te, elle parait plus verte , qu'elle est jolie mais il manque encore
+      du progr\xE8s !"
+    choices:
+    - name: Next
+      nextDialogueID: ccd191ba-6ad6-40ec-af7e-0065e1b0be1a
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 237.05005, y: 151.25}
+    sound: {fileID: 0}

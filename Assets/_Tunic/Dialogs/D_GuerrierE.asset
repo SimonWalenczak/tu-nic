@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c45406c869b3d294faf4ca9faac25539, type: 3}
+  m_Name: D_GuerrierE
+  m_EditorClassIdentifier: 
+  nodes:
+  - id: 7eb67eb8-77d5-429d-a305-5a2fa1afb508
+    characterName: Character
+    text: "Alors CHEF ! Etes-vous content du progr\xE8s de la plan\xE8te CHEF ?! "
+    choices:
+    - name: Next
+      nextDialogueID: c74e065e-1b76-4a32-8661-9a25b0093f1f
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 230.60002, y: 152.04999}
+    sound: {fileID: 0}
+  - id: c74e065e-1b76-4a32-8661-9a25b0093f1f
+    characterName: Character
+    text: 'Si je peux me permettre CHEF ! Je trouve que c''est un peu trop vert ! '
+    choices:
+    - name: "Je vous \xE9coute SOLDAT ! Qu'avez vous \xE0 me proposer ?"
+      nextDialogueID: 78617f95-c3a0-440b-b090-efcd0b50e134
+    - name: 'Un peu trop de vert ? '
+      nextDialogueID: 6992ac11-aacc-44fe-b45d-123f9a351473
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 769.3501, y: 151.84999}
+    sound: {fileID: 0}
+  - id: 78617f95-c3a0-440b-b090-efcd0b50e134
+    characterName: Character
+    text: "Je pense qu'on pourrait mettre en place un syst\xE8me d'armement CHEF
+      ! "
+    choices:
+    - name: Next
+      nextDialogueID: 229a0956-62dd-4f4c-9766-3be2564fb04c
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 1247.7501, y: 3.0999923}
+    sound: {fileID: 0}
+  - id: 6992ac11-aacc-44fe-b45d-123f9a351473
+    characterName: Character
+    text: Oui CHEF ! Je trouve que l'on manque de puissance de FEU !
+    choices:
+    - name: Next
+      nextDialogueID: 229a0956-62dd-4f4c-9766-3be2564fb04c
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 1250.9003, y: 257.65}
+    sound: {fileID: 0}
+  - id: 229a0956-62dd-4f4c-9766-3be2564fb04c
+    characterName: Character
+    text: "Si on se sert des panneaux solaire on devrait pouvoir cr\xE9er des drones
+      capables de PLANTER tout nos ennemis ! HA HA HA !"
+    choices:
+    - name: "Je vais parler a vos coll\xE8gues pour avoir un avis d\xE9finitif."
+      nextDialogueID: f18ed140-c2bc-4f1e-84e0-694f1fb68db3
+    - name: Je suis bien d'accord SOLDAT ! Je signe ou ?
+      nextDialogueID: a8a1fd4f-4b3e-460b-ba20-383cea32fae9
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 1819.8003, y: 151.50006}
+    sound: {fileID: 0}
+  - id: f18ed140-c2bc-4f1e-84e0-694f1fb68db3
+    characterName: Character
+    text: "J'esp\xE8re que vous me choisirez CHEF !"
+    choices:
+    - name: Next
+      nextDialogueID: 
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 2404.5505, y: -1.1000226}
+    sound: {fileID: 0}
+  - id: a8a1fd4f-4b3e-460b-ba20-383cea32fae9
+    characterName: Character
+    text: "Le bouton est juste l\xE0 CHEF !"
+    choices:
+    - name: Next
+      nextDialogueID: 
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 2412.6504, y: 282.95}
+    sound: {fileID: 0}
+  firstNode:
+    id: 7eb67eb8-77d5-429d-a305-5a2fa1afb508
+    characterName: Character
+    text: "Alors CHEF ! Etes-vous content du progr\xE8s de la plan\xE8te CHEF ?! "
+    choices:
+    - name: Next
+      nextDialogueID: c74e065e-1b76-4a32-8661-9a25b0093f1f
+    characterSprite: {fileID: 0}
+    backgroundSprite: {fileID: 0}
+    position: {x: 230.60002, y: 152.04999}
+    sound: {fileID: 0}
