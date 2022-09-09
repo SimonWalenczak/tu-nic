@@ -4,12 +4,9 @@ using UnityEngine;
 
 namespace Tunic
 {
-    public class Planet : MonoBehaviour
+    public class Terrain : MonoBehaviour
     {
         private Mesh mesh;
-
-        private List<Vector3> vertices;
-        private List<int> triangles;
 
         [SerializeField]
         private int size = 100;
@@ -31,12 +28,20 @@ namespace Tunic
 
         int[,] heights;
 
+        List<Vector3> vertices;
+        List<int> triangles;
+        List<Color32> colors;
+
+        [SerializeField]
+        Gradient gradient;
+
         private void Start()
         {
             heights = new int[size, size];
 
             vertices = new List<Vector3>();
             triangles = new List<int>();
+            colors = new List<Color32>();
 
             mesh = new Mesh();
             mesh.name = "Terrain";
@@ -61,6 +66,11 @@ namespace Tunic
                 return -1;
 
             return heights[x, z];
+        }
+
+        private Color32 colorByHeight(int height)
+        {
+            return gradient.Evaluate(height / 15f);
         }
 
         private void Generate()
@@ -102,6 +112,11 @@ namespace Tunic
                     vertices.Add(new Vector3(x + cubeSize, height, z));
                     vertices.Add(new Vector3(x, height, z + cubeSize));
                     vertices.Add(new Vector3(x + cubeSize, height, z + cubeSize));
+
+                    colors.Add(colorByHeight(height));
+                    colors.Add(colorByHeight(height));
+                    colors.Add(colorByHeight(height));
+                    colors.Add(colorByHeight(height));
                 }
             }
 
@@ -121,9 +136,9 @@ namespace Tunic
                     triangles.Add(index + 2);
                     triangles.Add(index + 3);
 
-                    float height = getHeight(x, z);
+                    int height = getHeight(x, z);
 
-                    float west = getHeight(x - 1, z);
+                    int west = getHeight(x - 1, z);
 
                     if (west >= 0 || west > height)
                     {
@@ -136,10 +151,15 @@ namespace Tunic
                         vertices.Add(vertices[otherIndex + 1]);
                         vertices.Add(vertices[otherIndex + 3]);
 
+                        colors.Add(colorByHeight(height));
+                        colors.Add(colorByHeight(height));
+                        colors.Add(colorByHeight(west));
+                        colors.Add(colorByHeight(west));
+
                         addTriangles(current);
                     }
 
-                    float north = getHeight(x, z + 1);
+                    int north = getHeight(x, z + 1);
 
                     if (north >= 0 || north > height)
                     {
@@ -152,10 +172,15 @@ namespace Tunic
                         vertices.Add(vertices[otherIndex]);
                         vertices.Add(vertices[otherIndex + 1]);
 
+                        colors.Add(colorByHeight(height));
+                        colors.Add(colorByHeight(height));
+                        colors.Add(colorByHeight(north));
+                        colors.Add(colorByHeight(north));
+
                         addTriangles(current);
                     }
 
-                    float east = getHeight(x + 1, z);
+                    int east = getHeight(x + 1, z);
 
                     if (east >= 0 && east > height)
                     {
@@ -168,10 +193,15 @@ namespace Tunic
                         vertices.Add(vertices[otherIndex + 2]);
                         vertices.Add(vertices[otherIndex]);
 
+                        colors.Add(colorByHeight(height));
+                        colors.Add(colorByHeight(height));
+                        colors.Add(colorByHeight(east));
+                        colors.Add(colorByHeight(east));
+
                         addTriangles(current);
                     }
 
-                    float south = getHeight(x, z - 1);
+                    int south = getHeight(x, z - 1);
 
                     if (south >= 0 && south > height)
                     {
@@ -184,6 +214,11 @@ namespace Tunic
                         vertices.Add(vertices[otherIndex + 3]);
                         vertices.Add(vertices[otherIndex + 2]);
 
+                        colors.Add(colorByHeight(height));
+                        colors.Add(colorByHeight(height));
+                        colors.Add(colorByHeight(south));
+                        colors.Add(colorByHeight(south));
+
                         addTriangles(current);
                     }
                 }
@@ -195,6 +230,7 @@ namespace Tunic
 
             mesh.vertices = vertices.ToArray();
             mesh.triangles = triangles.ToArray();
+            mesh.colors32 = colors.ToArray();
 
             mesh.RecalculateNormals();
         }
