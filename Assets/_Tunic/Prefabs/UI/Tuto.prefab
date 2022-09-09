@@ -75,7 +75,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8075598843442316533
 RectTransform:
   m_ObjectHideFlags: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: ced062fbaffd7ca4c8b28729365cc867, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -161,7 +161,7 @@ RectTransform:
   m_GameObject: {fileID: 8075598843628834320}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.403, y: 4.403, z: 4.403}
+  m_LocalScale: {x: 12.12, y: 8, z: 4.403}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8075598843258561363}
@@ -193,14 +193,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8396226, g: 0.19406372, b: 0.19406372, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: fa06d45e2a2f0184d8043fc73676ab65, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -227,7 +227,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8075598844990374644
 RectTransform:
   m_ObjectHideFlags: 0
@@ -383,12 +383,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3168053023259240715, guid: 44d2c2709b0fa524d9822291c6c368eb, type: 3}
       propertyPath: m_text
-      value: Return
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3168053023259240715, guid: 44d2c2709b0fa524d9822291c6c368eb, type: 3}
       propertyPath: m_fontSize
-      value: 59.75
+      value: 24
       objectReference: {fileID: 0}
+    - target: {fileID: 7382009303408799503, guid: 44d2c2709b0fa524d9822291c6c368eb, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7382009303408799503, guid: 44d2c2709b0fa524d9822291c6c368eb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 94510da3c89643145a9e7e5a71542d4e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44d2c2709b0fa524d9822291c6c368eb, type: 3}
 --- !u!224 &8300897155645752027 stripped
@@ -501,6 +509,10 @@ PrefabInstance:
     - target: {fileID: 1068613335845673352, guid: 44d2c2709b0fa524d9822291c6c368eb, type: 3}
       propertyPath: m_Name
       value: PrevButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1068613335845673352, guid: 44d2c2709b0fa524d9822291c6c368eb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3168053023259240715, guid: 44d2c2709b0fa524d9822291c6c368eb, type: 3}
       propertyPath: m_text
@@ -622,6 +634,10 @@ PrefabInstance:
     - target: {fileID: 1068613335845673352, guid: 44d2c2709b0fa524d9822291c6c368eb, type: 3}
       propertyPath: m_Name
       value: NextButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1068613335845673352, guid: 44d2c2709b0fa524d9822291c6c368eb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3168053023259240715, guid: 44d2c2709b0fa524d9822291c6c368eb, type: 3}
       propertyPath: m_text
